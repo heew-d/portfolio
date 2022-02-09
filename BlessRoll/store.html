@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>매장찾기</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- 폰트어썸 -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <!--구글 폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@300;400;500;600;700;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;900&family=Poppins:wght@100;200&family=Work+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+            
+        <!--패비콘-->
+        <link href="por-icon.png" rel="icon">
+            
+        <!-- 스타일시트 -->
+        <link rel="stylesheet" href="css/com.css">
+        <link rel="stylesheet" href="css/store.css">
+        <link rel="stylesheet" href="css/sub-com.css">
+</head>
+<body>
+    
+    <!--헤더-->
+    <div class="header">
+        <h1>
+            <a href="blessroll.html">
+                <!-- <img src="images/logo.png" alt="로고"> -->
+                <img src="images/header-logo.png" alt="로고">
+            </a>
+        </h1>
+        <!--메뉴-->
+        <div class="gnb">
+            <ul>
+                <li>
+                    <a href="intro.html" class="mainnav">Bless roll</a>
+                    <ul class="subnav">
+                        <li><a href="intro.html">블레스롤 소개</a></li>
+                        <li><a href="map.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cake.html" class="mainnav">menu</a>
+                    <ul class="subnav">
+                        <li><a href="cake.html">CAKE</a></li>
+                        <li><a href="rollcake.html">ROLLCAKE</a></li>
+                        <li><a href="icecream.html">ICECREAM</a></li>
+                        <li><a href="cupcake.html">CUPCAKE</a></li>
+                        <li><a href="drink.html">DRINK</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="event.html" class="mainnav">event</a>
+                    <ul class="subnav">
+                        <li><a href="event.html">진행중인 이벤트</a></li>
+                        <li><a href="event.html">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="store.html" class="mainnav">store</a>
+                    <ul class="subnav">
+                        <li><a href="store.html">매장찾기</a></li>
+                        <li><a href="store.html">단체주문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" class="mainnav">about</a>
+                    <ul class="subnav">
+                        <li><a href="about.html">점포개설문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--우측: 검색, 전체메뉴-->
+        <div class="menu-right">
+            <div class="icon-group">
+                <i class="fas fa-search"></i>
+                <!-- 햄버거 메뉴바 -->
+                <div class="ham-btn">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+     <!-- //헤더-->
+
+        <!--모바일 메뉴-->
+        <div class="mobile">
+            <ul class="m-menu">
+                <li>
+                    <a href="intro.html" class="mainnav">Bless roll</a>                    
+                    <ul class="subnav">
+                        <li><a href="intro.html">블레스롤 소개</a></li>
+                        <li><a href="map.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cake.html" class="mainnav">menu</a>
+                    <ul class="subnav">
+                        <li><a href="cake.html">CAKE</a></li>
+                        <li><a href="rollcake.html">ROLLCAKE</a></li>
+                        <li><a href="icecream.html">ICECREAM</a></li>
+                        <li><a href="cupcake.html">CUPCAKE</a></li>
+                        <li><a href="drink.html">DRINK</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="event.html" class="mainnav">event</a>
+                    <ul class="subnav">
+                        <li><a href="event.html">진행중인 이벤트</a></li>
+                        <li><a href="event.html">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="store.html" class="mainnav">store</a>
+                    <ul class="subnav">
+                        <li><a href="store.html">매장찾기</a></li>
+                        <li><a href="store.html">단체주문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" class="mainnav">about</a>
+                    <ul class="subnav">
+                        <li><a href="about.html">점포개설문의</a></li>
+                     </ul>
+                </li>
+            </ul>
+         </div>
+
+    <!-- 페이지 상단 이미지-->
+    <section class="page-name">
+        <div class="page-title">
+            <h1>STORE</h1>
+        </div>
+    </section>
+
+    <!--매장찾기 -->
+    <section class="section section1">
+        <div class="section-box">
+            <div class="section-title">
+                <h1>매장찾기 STORE</h1>
+                <!-- 검색창-->
+                <div class="search-form">
+                    <label for="search"></label>
+                    <input type="search" id="search" name="q"
+                           aria-label="Search through site content" placeholder="검색">
+                </div>
+            </div>
+            <!-- 매장리스트 표 -->
+            <div class="store-table container">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>매장명</th>
+                            <th>위치</th>
+                            <th>연락처</th>
+                            <th>영업시간</th>
+                        </tr>
+                    </thead>
+ 
+                    <tbody>
+                        <tr>
+                            <td>대구 유성본점</td>
+                            <td>대전광역시 유성구 한밭대로492번길 7, 
+                                1/2층(봉명동668-2)</td>
+                            <td>0507-1412-0692</td>
+                            <td>매일 09:00 ~ 25:00(새벽1시)</td>
+                        </tr>
+                        <tr>
+                            <td>대구 침산점</td>
+                            <td>대구광역시 북구 옥산로 106-1, 1/2층(고성동3가 11-1)</td>
+                            <td>0507-1374-2350</td>
+                            <td>매일 10:00 ~ 24:00(밤12시)</td>
+                        </tr>
+                        <tr>
+                            <td>양산 물금점</td>
+                            <td>경상남도 양산시 물금읍 범어로 72길 1층(범어리2711-8)</td>
+                            <td>0507-1354-0667</td>
+                            <td>매일 10:00 ~ 25:00(새벽1시)</td>
+                        </tr>
+                        <tr>
+                            <td>서울 위례점</td>
+                            <td>경기도 성남시 수정구 위례서일로1길 22-8 1층(창곡동 544-3)</td>
+                            <td>0507-1414-1590</td>
+                            <td>월/화/일요일    09:00 ~ 24:00<br>
+                                수~토요일        09:00 ~ 25:00(새벽1시)
+                                 </td>
+                        </tr>
+                        <tr>
+                            <td>하남 미사점</td>
+                            <td>경기도 하남시 미사강변북로 30번길 129 1층(망월동 1004)</td>
+                            <td>0507-1405-7298</td>
+                            <td>매일 09:30 ~ 23:25</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+            <!--페이지네이션-->
+            <div class="page-group">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 푸터 -->
+    <div class="footer">
+        <div class="container">
+            <div class="contents">
+                <h2>블레스롤</h2>
+                <p>상호 : 블레스롤 &nbsp;&nbsp; 가맹본부 : 대전광역시 유성구 한밭대로492번길 7 (봉명동668-2) <br>전화번호:042-524-7051 <br>대표: 한아랑  &nbsp;&nbsp;사업자번호: 355-11-00212<br>E-mail : blessroll@naver.com
+                </p>
+                <p class="copy">COPYRIGHTⓒ2015ALL RIGHT RESERVED</p>
+            </div>
+            <div class="contents">
+                <div class="cal">
+                    <h2>고객센터</h2>
+                    <span>042-524-7051</span>
+                </div>
+                <div class="cal">
+                    <h2>가맹문의</h2>
+                    <span> 1899-7051</span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="sns-icon">
+                    <img src="images/facebook.png" alt="페이스북">
+                    <img src="images/instagram.png" alt="인스타그램">
+                    <img src="images/youtube.png" alt="유튜브">
+                    <img src="images/twitter.png" alt="트위터">
+                </div>
+            </div>
+        </div>
+
+    </div>    
+</body>
+<!--스크립트-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="com.js"></script> 
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script>
+
+</script>
+</html>

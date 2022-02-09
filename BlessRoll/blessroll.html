@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+        <!-- 폰트어썸 -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <!--구글 폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@300;400;500;600;700;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;900&family=Poppins:wght@100;200&family=Work+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+        <!--
+            font-family: 'Gowun Dodum', sans-serif;
+        -->
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+        <!--
+            font-family: 'Luxurious Roman', cursive;
+        -->
+        <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+        <!--패비콘-->
+        <link href="por-icon.png" rel="icon">
+
+        <!-- 스타일시트 -->
+        <link rel="stylesheet" href="css/com.css">
+        <link rel="stylesheet" href="css/blessroll.css">
+
+        <!--aos-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!--owl-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+
+    <title>블레스롤</title>
+</head>
+<body>
+    <!--헤더-->
+    <div class="header">
+        <h1>
+            <a href="blessroll.html">
+                <!-- <img src="images/logo.png" alt="로고"> -->
+                <img src="images/header-logo.png" alt="로고">
+            </a>
+        </h1>
+        <!--메뉴-->
+        <div class="gnb">
+            <ul>
+                <li>
+                    <a href="intro.html" class="mainnav">Bless roll</a>
+                    <ul class="subnav">
+                        <li><a href="intro.html">블레스롤 소개</a></li>
+                        <li><a href="map.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cake.html" class="mainnav">menu</a>
+                    <ul class="subnav">
+                        <li><a href="cake.html">CAKE</a></li>
+                        <li><a href="rollcake.html">ROLLCAKE</a></li>
+                        <li><a href="icecream.html">ICECREAM</a></li>
+                        <li><a href="cupcake.html">CUPCAKE</a></li>
+                        <li><a href="drink.html">DRINK</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="event.html" class="mainnav">event</a>
+                    <ul class="subnav">
+                        <li><a href="event.html">진행중인 이벤트</a></li>
+                        <li><a href="event.html">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="store.html" class="mainnav">store</a>
+                    <ul class="subnav">
+                        <li><a href="store.html">매장찾기</a></li>
+                        <li><a href="store.html">단체주문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" class="mainnav">about</a>
+                    <ul class="subnav">
+                        <li><a href="about.html">점포개설문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--우측: 검색, 전체메뉴-->
+        <div class="menu-right">
+            <div class="icon-group">
+                <i class="fas fa-search"></i>
+                <!-- 햄버거 메뉴바 -->
+                <div class="ham-btn">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+     <!-- //헤더-->
+    <!--고정헤더-->
+    <div class="header2">
+        <h1>
+            <a href="blessroll.html">
+                <!-- <img src="images/logo.png" alt="로고"> -->
+                <img src="images/header-logo.png" alt="로고">
+            </a>
+        </h1>
+        <!--메뉴-->
+        <div class="gnb">
+            <ul>
+                <li>
+                    <a href="intro.html" class="mainnav">Bless roll</a>
+                    <ul class="subnav">
+                        <li><a href="intro.html">블레스롤 소개</a></li>
+                        <li><a href="map.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cake.html" class="mainnav">menu</a>
+                    <ul class="subnav">
+                        <li><a href="cake.html">CAKE</a></li>
+                        <li><a href="rollcake.html">ROLLCAKE</a></li>
+                        <li><a href="icecream.html">ICECREAM</a></li>
+                        <li><a href="cupcake.html">CUPCAKE</a></li>
+                        <li><a href="drink.html">DRINK</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="event.html" class="mainnav">event</a>
+                    <ul class="subnav">
+                        <li><a href="event.html">진행중인 이벤트</a></li>
+                        <li><a href="event.html">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="store.html" class="mainnav">store</a>
+                    <ul class="subnav">
+                        <li><a href="store.html">매장찾기</a></li>
+                        <li><a href="store.html">단체주문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" class="mainnav">about</a>
+                    <ul class="subnav">
+                        <li><a href="about.html">점포개설문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--우측: 검색, 전체메뉴-->
+        <div class="menu-right">
+            <div class="icon-group">
+                <i class="fas fa-search"></i>
+                <!-- 햄버거 메뉴바 -->
+                <div class="ham-btn">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+     <!-- //고정헤더 -->
+
+        <!--모바일 메뉴-->
+        <div class="mobile">
+            <ul class="m-menu">
+                <li>
+                    <a href="intro.html" class="mainnav">Bless roll</a>                    
+                    <ul class="subnav">
+                        <li><a href="intro.html">블레스롤 소개</a></li>
+                        <li><a href="map.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cake.html" class="mainnav">menu</a>
+                    <ul class="subnav">
+                        <li><a href="cake.html">CAKE</a></li>
+                        <li><a href="rollcake.html">ROLLCAKE</a></li>
+                        <li><a href="icecream.html">ICECREAM</a></li>
+                        <li><a href="cupcake.html">CUPCAKE</a></li>
+                        <li><a href="drink.html">DRINK</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="event.html" class="mainnav">event</a>
+                    <ul class="subnav">
+                        <li><a href="event.html">진행중인 이벤트</a></li>
+                        <li><a href="event.html">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="store.html" class="mainnav">store</a>
+                    <ul class="subnav">
+                        <li><a href="store.html">매장찾기</a></li>
+                        <li><a href="store.html">단체주문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" class="mainnav">about</a>
+                    <ul class="subnav">
+                        <li><a href="about.html">점포개설문의</a></li>
+                     </ul>
+                </li>
+            </ul>
+         </div>
+
+
+     <!-- 메인 : 비디오-->
+     <div class="main-img">
+         <div class="vod-box">
+            <video src="images/main-vod3.mp4" autoplay muted loop playsinline></video>
+         </div>
+
+         <!-- 타이핑 -->   
+         <div class="text_box" data-trigger>
+            <span class="text"></span>
+          </div>
+            
+    </div>
+     <!-- //메인 -->
+
+     <!--브랜드 스토리-->
+     <div class="section section-story">
+         <div class="section-box">
+            <div class="container">
+                <div class="box story-txt">
+                    <div class="story-cont">
+                        <div class="title-group">
+                            <h1 class="title">brand&nbsp;<span>story</span></h1>
+                        </div>
+                        <p class="sub-title">일상의 즐거움을 창조하는 카페문화 선도 기업
+                            <span>#다양한메뉴 #고품격프리미엄 #한결같은마음 #진한맛과풍미</span>
+                        </p>
+
+                        <div class="story-more">
+                            <p>다양한 종류의 크림으로 만든 <span>"롤케이크"</span></p>
+                            <p>"아르꼬발레노", "디카페인" <span>두 가지 원두</span></p>
+                            <p>부드러운 쿠크다스 콘에 담긴 <span>"블레스크림"</span></p>
+                            <p>알록달록 눈까지 즐거운 <span>"무지개 케이크"</span></p>
+                            <p>일상 속에서 즐기는 축복의 디저트</p>
+                            <p>소중한 당신을 프리미엄 디저트 카페의 세계로 초대합니다</p>                              
+                        </div>
+                        <button><a href="intro.html">자세히보기</a></button>
+                    </div>
+                </div>
+                <div class="box story-img">
+                    <div class="img left-img" data-aos="fade-up"
+                    data-aos-duration="3000">
+                        <img src="images/brand-story-left1.jpg" alt="브랜드스토리 이미지">
+                    </div>
+                    <div class="img right-img" data-aos="fade-up"
+                    data-aos-duration="3000">
+                        <img src="images/brand-story-right.jpg" alt="브랜드스토리 이미지">
+                    </div>
+                </div>
+
+            </div>
+         </div>
+     </div>
+
+     <!--이벤트섹션-->
+     <div class="section section-event">
+         <div class="section-box">
+            <!--타이틀그룹-->
+            <div class="title-group" data-aos="fade-up"
+            data-aos-duration="3000">
+                <h1 class="title">event</h1>
+                <div class="txt">
+                    <p>겨울맞이 연말 할인 시즌</p>
+                    <p>추운 겨울 따뜻한 음료와 함께<br> 블레스롤에서 준비한 따뜻한 음료와<br>맛있는 케이크로 연말을 보내세요</p>
+                </div>
+                <div class="notice">
+                    <p class="n-title">
+                        유의사항
+                    </p>
+                    <p>· 사은품은 1인 1회 증정되며 한정 수량으로 별도의<br>&nbsp;&nbsp; 사전공지 없이 조기 종료 될 수 있습니다</p>
+                    <p>· 반품 및 환불 시 사은품도 같이 동봉해주셔야 합니다.</p>
+                </div>
+            </div>
+            <div class="right-cont" data-aos="fade-up"
+            data-aos-duration="3000">
+                <div class="box box1">
+                    <p class="prom-num">promotion001</p>
+                    <p class="prom-name"><span>커피구독</span>서비스</p>
+                    <span class="line"></span>
+                    <p class="prom-txt">매일매일 원하는 커피를 저렴한<br> 가격으로 편하게 구독해서 먹자</p>
+                    <div class="img-box">
+                        <img src="images/prom11.png" alt="프로모션1">
+                    </div>
+                    <p class="prom-price">한달구독 가격  <span class="p1">38,000</span><span class="p2">원</span></p>
+                </div>
+                <div class="box box2">
+                    <p class="prom-num">promotion002</p>
+                    <p class="prom-name"><span>해시태그</span>이벤트</p>
+                    <span class="line"></span>
+                    <p class="prom-txt">블레스크림을 주문하신 후 SNS에<br> 해시태그와 함께 인증샷을 올려주시면<br> 블레스크림을 하나 더 드립니다.</p>
+                    <div class="img-box">
+                        <img src="images/ice.png" alt="프로모션2">
+                    </div>
+                   <div class="tag">
+                        <p class="prom-tag"><span>필수태그</span><br>#블레스롤#쿠크다스아이스크림</p>
+                        <p class="prom-not">소진 시 조기마감될 수 있습니다.</p>
+                   </div>
+  
+                </div>
+             </div>
+
+         </div>
+
+     </div>
+
+     <!--섹션3 : product-->
+     <div class="section section-product">
+        
+            <!--타이틀그룹-->
+            <div class="title-group">
+                <h1 class="title" data-aos="fade-up"
+                data-aos-duration="3000">블레스롤이 선사하는 다채로운 경험</h1>
+               <p></p>
+            </div>
+            <p class="sub-title" data-aos="fade-up"
+            data-aos-duration="3000">전문 파티쉐분들이 만드는 HAND-MADE 케이크로 <br>
+                비쥬얼, 맛, 건강함, 그리고 먹는 즐거움까지 함께 선사합니다</p>
+            <!--상품들-->
+            <div class="product-box">
+                <div class="img-moving">
+                    <div class="bottom"></div>
+                    <div class="menu"></div>
+                </div>    
+            </div>
+            <div class="product-cont">
+                <p class="txt-tit" data-aos="fade-up"
+                data-aos-duration="3000">Cafe BlessRoll</p>
+                <p class="txt txt1 txt-line" data-aos="fade-up"
+                data-aos-duration="3000">
+                    "우리는 축복을 만드는 사람들입니다!"
+                </p>
+                <p class="txt txt2" data-aos="fade-up"
+                data-aos-duration="3000">블레스롤은 유지방률이 가장 높은 최고급 동물성 크림을 사용하고 <br>
+                전문 파티쉐분들이 만드는 HAND-MADE 케이크를 판매합니다.
+                </p>
+                <p class="txt txt3" data-aos="fade-up"
+                data-aos-duration="3000">
+                    건강한 식재료로 고객을 생각하는 한결같은 마음과 진심을 담아<br> 먹는사람으로 하여금 입안의 축복을 선사하기 위해 노력하겠습니다.
+                </p>
+            </div>
+        
+    </div>
+
+
+    <!-- 섹션4 : 스토어, 단체주문 -->
+    <div class="section section-store">
+        <div class="text">
+            <h3 data-aos="fade-up"
+            data-aos-duration="3000">Catering service</h3>
+            <p data-aos="fade-up"
+            data-aos-duration="3000">단체주문 & 케이터링 서비스</p>
+            <button data-aos="fade-up"
+            data-aos-duration="3000">자세히보기</button>
+        </div>
+    </div>
+
+ <!-- 섹션1 : brand story -->
+ <div class="section section-brand">
+    <div class="section-box">
+       <div class="title-group">
+           <h1 class="title" data-aos="fade-up"
+           data-aos-duration="3000"><span>about</span>&nbsp;Bless Roll</h1>
+       </div>
+       <p class="sub-title" data-aos="fade-up"
+     data-aos-duration="3000">프리미엄 디저트 카페 블레스롤에서 새로운 즐거움의 세계가 열립니다!<br>블레스롤의 다양한 소식을 빠르게 확인하세요</p>
+       <div class="container" data-aos="fade-up"
+     data-aos-duration="3000">
+           <div class="item item1">
+               <img src="images/story1.jpg" alt="브랜드스토리">
+               <h6><span>건강한 디저트 </span>블레스롤</h6>
+               <div class="hov-box">
+                   <ul>
+                       <li><a href="intro.html">블레스롤 스토리</a></li>
+                       <li><a href="store.html">매장안내</a></li>
+                       <li><a href="blessroll.html">카페 둘러보기</a></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="item item2">
+               <img src="images/brand-story22.jpg" alt="브랜드스토리">
+               <h6><span>메뉴소개</span></h6>
+               <div class="hov-box">
+                   <ul>
+                        <li><a href="cake.html">CAKE</a></li>
+                        <li><a href="rollcake.html">ROLLCAKE</a></li>
+                        <li><a href="icecream.html">ICECREAM</a></li>
+                        <li><a href="cupcake.html">CUPCAKE</a></li>
+                        <li><a href="drink.html">DRINK</a></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="item item3">
+               <img src="images/brand-story3.jpg" alt="브랜드스토리">
+               <h6><span>가맹점 개설 안내</span></h6>
+               <div class="hov-box">
+                   <ul>
+                       <li><a href="about.html">창업문의</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+
+    </div>
+    
+</div>
+<!--//섹션 : brand story-->
+
+    <!-- 섹션5 : sns -->
+     <div class="section section-sns">
+        <div class="section-box">
+         <!--타이틀그룹-->
+            <div class="title-group">
+                <h1 class="title" data-aos="fade-up"
+                data-aos-duration="2000">#Bless Roll <span>sns</span></h1>
+            </div>
+            <p class="sub-title" data-aos="fade-up"
+            data-aos-duration="2000">스토리를 마시는 일상, 카페 블레스롤</p>
+
+            <!--이미지 그룹-->
+            <div class="sns-group" data-aos="fade-up"
+            data-aos-duration="2000">
+                <div class="item item-c item1">
+                    <!--sns 아이콘-->
+                     <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+                    </div>
+                    <img src="images/insta1.jpg" alt="sns이미지">
+                    <img src="images/insta11.jpg" alt="sns이미지">
+                    <img src="images/insta19.jpg" alt="sns이미지">
+                </div>
+                <div class="item item-c item2">
+                     <!--sns 아이콘-->
+                     <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+           
+                    </div>                   
+                    <img src="images/insta2.jpg" alt="sns이미지">
+                    <img src="images/insta22.jpg" alt="sns이미지">
+                    <img src="images/insta20.jpg" alt="sns이미지">
+                </div>
+                <div class="item item3">
+                     <!--sns 아이콘-->
+                     <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+           
+                    </div>                   
+                    <img src="images/insta16.jpeg" alt="sns이미지">
+
+                </div>
+                <div class="item item-c item4">
+                    <!--sns 아이콘-->
+                    <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+           
+                    </div>                    
+                    <img src="images/insta21.jpg" alt="sns이미지">
+                    <img src="images/insta12.jpg" alt="sns이미지">
+                    <img src="images/insta3.jpg" alt="sns이미지">
+                </div>
+                <div class="item item-c item5">
+                    <!--sns 아이콘-->
+                    <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+           
+                    </div>                    
+                    <img src="images/insta24.jpg" alt="sns이미지">
+                    <img src="images/insta13.jpg" alt="sns이미지">
+                    <img src="images/insta6.jpg" alt="sns이미지">
+                </div>
+                <div class="item item6">
+                    <!--sns 아이콘-->
+                    <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+           
+                    </div>                    
+                    <img src="images/insta5.jpg" alt="sns이미지">
+                </div>
+                <div class="item item-c item7">
+                    <!--sns 아이콘-->
+                    <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+           
+                    </div>                    
+                    <img src="images/insta15.jpg" alt="sns이미지">
+                    <img src="images/insta7.jpg" alt="sns이미지">
+                    <img src="images/insta14.jpg" alt="sns이미지">
+                </div>
+                <div class="item item-c item8">
+                    <!--sns 아이콘-->
+                    <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+           
+                    </div>                    
+                    <img src="images/insta8.jpg" alt="sns이미지">
+                    <img src="images/insta21.jpg" alt="sns이미지">
+                    <img src="images/insta25.jpg" alt="sns이미지">
+                </div>
+                <div class="item item-c item9">
+                    <!--sns 아이콘-->
+                    <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+           
+                    </div>                    
+                    <img src="images/insta9.jpg" alt="sns이미지">
+                    <img src="images/insta17.jpg" alt="sns이미지">
+                    <img src="images/insta23.jpg" alt="sns이미지">
+                </div>
+                <div class="item item-c item10">
+                    <!--sns 아이콘-->
+                    <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+                    </div>                    
+                    <img src="images/insta10.jpg" alt="sns이미지">
+                    <img src="images/insta24.jpg" alt="sns이미지">
+                    <img src="images/insta16.jpg" alt="sns이미지">
+                </div>
+                <div class="item item-c item11">
+                    <!--sns 아이콘-->
+                    <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+                    </div>                    
+                    <img src="images/insta6.jpg" alt="sns이미지">
+                    <img src="images/insta24.jpg" alt="sns이미지">
+                    <img src="images/insta5.jpg" alt="sns이미지">
+                </div>
+                <div class="item item-c item12">
+                    <!--sns 아이콘-->
+                    <div class="icon-group">
+                        <div class="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="icon"><a href="#"><i class="far fa-comment"></i></a></div>
+                    </div>                    
+                    <img src="images/insta3.jpg" alt="sns이미지">
+                    <img src="images/insta12.jpg" alt="sns이미지">
+                    <img src="images/insta16.jpg" alt="sns이미지">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <div class="footer">
+        <div class="container">
+            <div class="contents">
+                <h2>블레스롤</h2>
+                <p>상호 : 블레스롤 &nbsp;&nbsp; 가맹본부 : 대전광역시 유성구 한밭대로492번길 7 (봉명동668-2) <br>전화번호:042-524-7051 <br>대표: 한아랑  &nbsp;&nbsp;사업자번호: 355-11-00212<br>E-mail : blessroll@naver.com
+                </p>
+                <p class="copy">COPYRIGHTⓒ2015ALL RIGHT RESERVED</p>
+            </div>
+            <div class="contents">
+                <div class="cal">
+                    <h2>고객센터</h2>
+                    <span>042-524-7051</span>
+                </div>
+                <div class="cal">
+                    <h2>가맹문의</h2>
+                    <span> 1899-7051</span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="sns-icon">
+                    <img src="images/facebook.png" alt="페이스북">
+                    <img src="images/instagram.png" alt="인스타그램">
+                    <img src="images/youtube.png" alt="유튜브">
+                    <img src="images/twitter.png" alt="트위터">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- 탑버튼-->
+    <div class="top-btn">
+        <a href="#">
+            <img src="images/top-btn.png" alt="top버튼">
+        </a>
+    </div>
+</body>
+
+<!--스크립트-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+<!--aos-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!--owl-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script src="com.js"></script>
+<script>
+
+AOS.init();
+
+
+/*탑버튼*/
+$(".top-btn").hide()
+$(window).scroll(function(){
+    st = $(window).scrollTop();
+    console.log(st + ": " + (st>1000))
+        
+    //헤더 색상 변경
+    if(st>700){
+        $(".header2").addClass("visible")
+    }else{
+        $(".header2").removeClass("visible")
+    }
+
+    //탑버튼
+    if(st>1000){
+        $(".top-btn").show()
+            
+    }else{
+        $(".top-btn").hide()
+    }
+})
+
+/*sns 이미지*/
+var n=1;
+setInterval(function(){
+    if(n<3){
+        n++;
+        $(".section-sns .sns-group .item-c img").animate({left:"-=100%"},'slow')
+    }else{
+        n=1;
+        $(".section-sns .sns-group .item-c img").animate({left:0},'slow')
+    }
+},3000)
+
+
+</script>
+</html>

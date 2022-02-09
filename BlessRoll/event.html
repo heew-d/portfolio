@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+        <!-- 폰트어썸 -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <!--구글 폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@300;400;500;600;700;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;900&family=Poppins:wght@100;200&family=Work+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+            
+        <!--패비콘-->
+        <link href="por-icon.png" rel="icon">
+            
+        <!-- 스타일시트 -->
+        <link rel="stylesheet" href="css/com.css">
+        <link rel="stylesheet" href="css/event.css">
+        <link rel="stylesheet" href="css/sub-com.css">
+</head>
+<body>
+    
+    <!--헤더-->
+    <div class="header">
+        <h1>
+            <a href="blessroll.html">
+                <!-- <img src="images/logo.png" alt="로고"> -->
+                <img src="images/header-logo.png" alt="로고">
+            </a>
+        </h1>
+        <!--메뉴-->
+        <div class="gnb">
+            <ul>
+                <li>
+                    <a href="intro.html" class="mainnav">Bless roll</a>
+                    <ul class="subnav">
+                        <li><a href="intro.html">블레스롤 소개</a></li>
+                        <li><a href="map.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cake.html" class="mainnav">menu</a>
+                    <ul class="subnav">
+                        <li><a href="cake.html">CAKE</a></li>
+                        <li><a href="rollcake.html">ROLLCAKE</a></li>
+                        <li><a href="icecream.html">ICECREAM</a></li>
+                        <li><a href="cupcake.html">CUPCAKE</a></li>
+                        <li><a href="drink.html">DRINK</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="event.html" class="mainnav">event</a>
+                    <ul class="subnav">
+                        <li><a href="event.html">진행중인 이벤트</a></li>
+                        <li><a href="event.html">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="store.html" class="mainnav">store</a>
+                    <ul class="subnav">
+                        <li><a href="store.html">매장찾기</a></li>
+                        <li><a href="store.html">단체주문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" class="mainnav">about</a>
+                    <ul class="subnav">
+                        <li><a href="about.html">점포개설문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--우측: 검색, 전체메뉴-->
+        <div class="menu-right">
+            <div class="icon-group">
+                <i class="fas fa-search"></i>
+                <!-- 햄버거 메뉴바 -->
+                <div class="ham-btn">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+     <!-- //헤더-->
+
+        <!--모바일 메뉴-->
+        <div class="mobile">
+            <ul class="m-menu">
+                <li>
+                    <a href="intro.html" class="mainnav">Bless roll</a>                    
+                    <ul class="subnav">
+                        <li><a href="intro.html">블레스롤 소개</a></li>
+                        <li><a href="map.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cake.html" class="mainnav">menu</a>
+                    <ul class="subnav">
+                        <li><a href="cake.html">CAKE</a></li>
+                        <li><a href="rollcake.html">ROLLCAKE</a></li>
+                        <li><a href="icecream.html">ICECREAM</a></li>
+                        <li><a href="cupcake.html">CUPCAKE</a></li>
+                        <li><a href="drink.html">DRINK</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="event.html" class="mainnav">event</a>
+                    <ul class="subnav">
+                        <li><a href="event.html">진행중인 이벤트</a></li>
+                        <li><a href="event.html">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="store.html" class="mainnav">store</a>
+                    <ul class="subnav">
+                        <li><a href="store.html">매장찾기</a></li>
+                        <li><a href="store.html">단체주문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" class="mainnav">about</a>
+                    <ul class="subnav">
+                        <li><a href="about.html">점포개설문의</a></li>
+                     </ul>
+                </li>
+            </ul>
+         </div>
+
+    <!-- 페이지 상단 이미지-->
+    <section class="page-name">
+        <div class="page-title">
+            <h1>EVENT</h1>
+        </div>
+    </section>
+
+    <!--진행중인 이벤트 -->
+    <section class="section section1">
+        <div class="section-box">
+            <div class="section-title">
+                <h1>진행중인 이벤트</h1>
+            </div>
+            <div class="event-group">
+                <div class="item item1">
+                    <div class="img-box">
+                        <img src="images/event5.jpg" alt="이벤트3">
+                    </div>
+                    <div class="text-box">
+                        <p class="even-name">딸기시즌이 돌아왔다!</p>
+                        <p class="even-date">2022-01-10 ~ 2022-02-01</p>
+                    </div>
+                    <!-- 팝업-->
+                    <div class="popupWrap pop1">
+                        <div class="black"></div>
+                        <div class="popup">
+                             <img src="images/event5-1.jpg" alt="팝업이미지">
+                        <button>X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item item2">
+                    <div class="img-box">
+                        <img src="images/event2.jpg" alt="이벤트1">
+                    </div>
+                    <div class="text-box">
+                        <p class="even-name">크리스마스 한정판 케이크</p>
+                        <p class="even-date">2021-11-29 ~ 2021-12-31</p>
+                    </div>
+                    <!-- 팝업-->
+                    <div class="popupWrap pop2">
+                        <div class="black"></div>
+                         <div class="popup">
+                                <img src="images/event2.jpg" alt="팝업이미지">
+                        <button>X</button>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="item item3">
+
+                    <div class="img-box">
+                        <img src="images/cafe-event1-1.jpg" alt="이벤트4">
+                    </div>
+                    <div class="text-box">
+                        <p class="even-name">크리스마스 시즌 케이크</p>
+                        <p class="even-date">2021-11-30 ~ 2021-12-31</p>
+                    </div>
+                        <!-- 팝업-->
+                    <div class="popupWrap pop3">
+                        <div class="black"></div>
+                        <div class="popup">
+                                <img src="images/cafe-event4.png" alt="팝업이미지">
+                        <button>X</button>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="item item4">
+                    <div class="img-box">
+                        <img src="images/event3.jpg" alt="이벤트3">
+                    </div>
+                    <div class="text-box">
+                        <p class="even-name">소프트크림 라떼 출시</p>
+                        <p class="even-date">2021-11-02 ~ 2021-12-31</p>
+                    </div>
+                    <!-- 팝업-->
+                    <div class="popupWrap pop4">
+                        <div class="black"></div>
+                        <div class="popup">
+                            <img src="images/event3.jpg" alt="팝업이미지">
+                            <button>X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item item5">
+                    <div class="img-box">
+                        <img src="images/event1.jpg" alt="이벤트2">
+                    </div>
+                    <div class="text-box">
+                        <p class="even-name">소프트크림 라떼 주문시 아메리카노 무료 증정</p>
+                        <p class="even-date">2021-11-02 ~ 2021-12-31</p>
+                    </div>
+                    <!-- 팝업-->
+                    <div class="popupWrap pop5">
+                        <div class="black"></div>
+                        <div class="popup">
+                            <img src="images/event1.jpg" alt="팝업이미지">
+                            <button>X</button>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="item item6">
+                    <div class="img-box">
+                        <img src="images/event7.jpg" alt="이벤트2">
+                    </div>
+                    <div class="text-box">
+                        <p class="even-name">일회용 컵 줄이기 캠페인</p>
+                        <p class="even-date">상시진행</p>
+                    </div>
+                    <!-- 팝업-->
+                    <div class="popupWrap pop6">
+                        <div class="black"></div>
+                        <div class="popup">
+                            <img src="images/event7-1.jpg" alt="팝업이미지">
+                            <button>X</button>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- 푸터 -->
+    <div class="footer">
+        <div class="container">
+            <div class="contents">
+                <h2>블레스롤</h2>
+                <p>상호 : 블레스롤 &nbsp;&nbsp; 가맹본부 : 대전광역시 유성구 한밭대로492번길 7 (봉명동668-2) <br>전화번호:042-524-7051 <br>대표: 한아랑  &nbsp;&nbsp;사업자번호: 355-11-00212<br>E-mail : blessroll@naver.com
+                </p>
+                <p class="copy">COPYRIGHTⓒ2015ALL RIGHT RESERVED</p>
+            </div>
+            <div class="contents">
+                <div class="cal">
+                    <h2>고객센터</h2>
+                    <span>042-524-7051</span>
+                </div>
+                <div class="cal">
+                    <h2>가맹문의</h2>
+                    <span> 1899-7051</span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="sns-icon">
+                    <img src="images/facebook.png" alt="페이스북">
+                    <img src="images/instagram.png" alt="인스타그램">
+                    <img src="images/youtube.png" alt="유튜브">
+                    <img src="images/twitter.png" alt="트위터">
+                </div>
+            </div>
+        </div>
+
+    </div>    
+</body>
+<!--스크립트-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script src="com.js"></script>
+<script>
+$(".item1 img").click(function(e){
+    e.preventDefault()
+    $(".pop1").show()
+})
+$(".item2 img").click(function(e){
+    e.preventDefault()
+    $(".pop2").show()
+})
+$(".item3 img").click(function(e){
+    e.preventDefault()
+    // $(".popupWrap").css({display:"block"})
+    $(".pop3").show()
+})
+$(".item4 img").click(function(e){
+    e.preventDefault()
+    $(".pop4").show()
+})
+$(".item5 img").click(function(e){
+    e.preventDefault()
+    $(".pop5").show()
+})
+$(".item6 img").click(function(e){
+    e.preventDefault()
+    $(".pop6").show()
+})
+$(".popupWrap button").click(function(){
+    // $(".popupWrap").css({display:"none"})
+    $(".popupWrap").hide()
+})
+</script>
+</html>

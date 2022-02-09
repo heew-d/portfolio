@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>매뉴</title>
+
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!--구글 폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@300;400;500;600;700;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;900&family=Poppins:wght@100;200&family=Work+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+        <!--
+            font-family: 'Gowun Dodum', sans-serif;
+        -->
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">        
+    <!--패비콘-->
+    <link href="por-icon.png" rel="icon">
+        
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="css/com.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/sub-com.css">
+    <!--aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    
+    <!--헤더-->
+    <div class="header">
+        <h1>
+            <a href="blessroll.html">
+                <!-- <img src="images/logo.png" alt="로고"> -->
+                <img src="images/header-logo.png" alt="로고">
+            </a>
+        </h1>
+        <!--메뉴-->
+        <div class="gnb">
+            <ul>
+                <li>
+                    <a href="intro.html" class="mainnav">Bless roll</a>
+                    <ul class="subnav">
+                        <li><a href="intro.html">블레스롤 소개</a></li>
+                        <li><a href="map.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cake.html" class="mainnav">menu</a>
+                    <ul class="subnav">
+                        <li><a href="cake.html">CAKE</a></li>
+                        <li><a href="rollcake.html">ROLLCAKE</a></li>
+                        <li><a href="icecream.html">ICECREAM</a></li>
+                        <li><a href="cupcake.html">CUPCAKE</a></li>
+                        <li><a href="drink.html">DRINK</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="event.html" class="mainnav">event</a>
+                    <ul class="subnav">
+                        <li><a href="event.html">진행중인 이벤트</a></li>
+                        <li><a href="event.html">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="store.html" class="mainnav">store</a>
+                    <ul class="subnav">
+                        <li><a href="store.html">매장찾기</a></li>
+                        <li><a href="store.html">단체주문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" class="mainnav">about</a>
+                    <ul class="subnav">
+                        <li><a href="about.html">점포개설문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--우측: 검색, 전체메뉴-->
+        <div class="menu-right">
+            <div class="icon-group">
+                <i class="fas fa-search"></i>
+                <!-- 햄버거 메뉴바 -->
+                <div class="ham-btn">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+     <!-- //헤더-->
+
+        <!--모바일 메뉴-->
+        <div class="mobile">
+            <ul class="m-menu">
+                <li>
+                    <a href="intro.html" class="mainnav">Bless roll</a>                    
+                    <ul class="subnav">
+                        <li><a href="intro.html">블레스롤 소개</a></li>
+                        <li><a href="map.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cake.html" class="mainnav">menu</a>
+                    <ul class="subnav">
+                        <li><a href="cake.html">CAKE</a></li>
+                        <li><a href="rollcake.html">ROLLCAKE</a></li>
+                        <li><a href="icecream.html">ICECREAM</a></li>
+                        <li><a href="cupcake.html">CUPCAKE</a></li>
+                        <li><a href="drink.html">DRINK</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="event.html" class="mainnav">event</a>
+                    <ul class="subnav">
+                        <li><a href="event.html">진행중인 이벤트</a></li>
+                        <li><a href="event.html">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="store.html" class="mainnav">store</a>
+                    <ul class="subnav">
+                        <li><a href="store.html">매장찾기</a></li>
+                        <li><a href="store.html">단체주문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" class="mainnav">about</a>
+                    <ul class="subnav">
+                        <li><a href="about.html">점포개설문의</a></li>
+                     </ul>
+                </li>
+            </ul>
+         </div>
+
+    <!-- 페이지 상단 이미지-->
+    <section class="page-name">
+        <div class="page-title">
+            <h1>MENU</h1>
+        </div>
+    </section>
+
+    <!--cake -->
+    <section class="section section1">
+        <div class="section-box">
+            <div class="section-title">
+                <h1>ICECREAM</h1>
+            </div>
+            <!--메뉴들-->
+
+            <div class="menu-group">
+                <div class="item item1">
+                    <div class="img-box">
+                        <img src="images/soft03.jpg" alt="아이스크림1">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">블레스크림</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">우유 본연의 진한 풍미, 쫀득한 질감의 고급 아이스크림과<br> 쿠크다스콘의 조화가 예술이며 마음까지<br> 녹여주는 소프트크림입니다.​​</p>
+                        <button>more</button>
+                    </div>
+                </div>
+
+                <div class="item item2">
+                    <div class="img-box">
+                        <img src="images/soft08.jpg" alt="아이스크림2">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">블레스코코</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">우유 본연의 진한 풍미에 리얼 코코아 파우더가<br> 더하여 입안 가득 초코향과 고급스러움을<br> 느낄 수 있습니다.​</p>
+                        <button>more</button>
+                    </div>
+                </div>
+
+                <div class="item item3">
+                    <div class="img-box">
+                        <img src="images/soft10.jpg" alt="아이스크림3">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">블레스녹차</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">우유 본연의 진한 풍미에 유기농 녹차 파우더를 <br>토핑하여 진한 향과 색채감을 더했습니다.​</p>
+                        <button>more</button>
+                    </div>
+                </div>
+
+                <div class="item item4">
+                    <div class="img-box">
+                        <img src="images/soft11.jpg" alt="아이스크림4">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">오더쿠크림</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">오레오와 쿠크다스의 만남</p>
+                        <button>more</button>
+                    </div>
+                </div>
+
+                <div class="item item5">
+                    <div class="img-box">
+                        <img src="images/soft13.jpg" alt="아이스크림5">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">빠더쿠크림</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">바나나 속살처럼 하얗고 부드러운 밀크소프트 크림과<br> 바나나킥, 바나나칩, 바나나맛 쿠크다스 까지<br> 한번에 맛볼 수 있는 신개념 아이스크림​</p>
+                        <button>more</button>
+                    </div>
+                </div>
+
+                <div class="item item6">
+                    <div class="img-box">
+                        <img src="images/soft14.jpg" alt="아이스크림6">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">마카롱파르페</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">달콤하고 쫄깃한 마카롱을 이용하여<br> 미각과 시각을 동시에 만족시킨 프리미엄 디저트​</p>
+                        <button>more</button>
+                    </div>
+                </div>
+
+                <div class="item item7">
+                    <div class="img-box">
+                        <img src="images/soft15.jpg" alt="아이스크림7">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">오레오파르페</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">바삭바삭한 식감의 쿠키를 부드러운 소프트크림에<br> 찍어먹는 재미있고 기분이 좋아지는 디저트​​</p>
+                        <button>more</button>
+                    </div>
+                </div>
+
+                <div class="item item8">
+                    <div class="img-box">
+                        <img src="images/soft17.jpg" alt="아이스크림8">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">밀크소프트</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">깊은 우유 향에 담백하고 느끼하지 않은<br> 순수 밀크소프트크림</p>
+                        <button>more</button>
+                    </div>
+                </div>
+
+                <div class="item item9">
+                    <div class="img-box">
+                        <img src="images/soft19.jpg" alt="아이스크림9">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">초코소프트</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">한번쯤 꿈꿔왔던 진정한 다크 초콜릿의 최강자</p>
+                        <button>more</button>
+                    </div>
+                </div>
+
+                <div class="item item10">
+                    <div class="img-box">
+                        <img src="images/soft18.jpg" alt="아이스크림10">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">딸기소프트</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">입안 가득 퍼지는 스트로우베리의 새로운 페러다임</p>
+                        <button>more</button>
+                    </div>
+                </div>
+
+                <div class="item item11">
+                    <div class="img-box">
+                        <img src="images/soft10.jpg" alt="아이스크림11">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">아포가토</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">우유가 듬뿍들어간 프리미엄 <br>밀크소프트크림에 아르꼬발레노의<br> 진한 에스프레소가 어우러진<br> 블레스롤만의 신개념 아포가토​</p>
+                        <button>more</button>
+                    </div>
+                </div>
+
+                <div class="item item12">
+                    <div class="img-box">
+                        <img src="images/soft20.jpg" alt="아이스크림12">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">브라우니빵빙수</p>
+                    </div>
+                    <!-- <div class="info-box">
+                        <p class="product-info">우유가 듬뿍들어간 프리미엄 밀크소프트크림에<br>아르꼬발레노의 진한 에스프레소가 어우러진<br> 블레스롤만의 신개념 아포가토​</p>
+                        <button>more</button>
+                    </div> -->
+                </div>
+
+                <div class="item item13">
+                    <div class="img-box">
+                        <img src="images/soft22.jpg" alt="아이스크림13">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">빙수쉐이크</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">마시는 1인용 팥빙수</p>
+                        <button>more</button>
+                    </div>
+                </div>
+                <div class="item item14">
+                    <div class="img-box">
+                        <img src="images/soft23.jpg" alt="아이스크림14">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">소프트크림라떼</p>
+                    </div>
+                    <!-- <div class="info-box">
+                        <p class="product-info">마시는 1인용 팥빙수</p>
+                        <button>more</button>
+                    </div> -->
+                </div>
+                <div class="item item15">
+                    <div class="img-box">
+                        <img src="images/soft24.jpg" alt="아이스크림15">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">소프트크림모카</p>
+                    </div>
+                    <!-- <div class="info-box">
+                        <p class="product-info">마시는 1인용 팥빙수</p>
+                        <button>more</button>
+                    </div> -->
+                </div>
+                <div class="item item16">
+                    <div class="img-box">
+                        <img src="images/soft25.jpg" alt="아이스크림16">
+                    </div>
+                    <div class="txt-box">
+                        <p class="product-name">벌꿀블레스크림</p>
+                    </div>
+                    <div class="info-box">
+                        <p class="product-info">가을벌꿀을 담은 블레스크림</p>
+                        <button>more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 푸터 -->
+    <div class="footer">
+        <div class="container">
+            <div class="contents">
+                <h2>블레스롤</h2>
+                <p>상호 : 블레스롤 &nbsp;&nbsp; 가맹본부 : 대전광역시 유성구 한밭대로492번길 7 (봉명동668-2) <br>전화번호:042-524-7051 <br>대표: 한아랑  &nbsp;&nbsp;사업자번호: 355-11-00212<br>E-mail : blessroll@naver.com
+                </p>
+                <p class="copy">COPYRIGHTⓒ2015ALL RIGHT RESERVED</p>
+            </div>
+            <div class="contents">
+                <div class="cal">
+                    <h2>고객센터</h2>
+                    <span>042-524-7051</span>
+                </div>
+                <div class="cal">
+                    <h2>가맹문의</h2>
+                    <span> 1899-7051</span>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="sns-icon">
+                    <img src="images/facebook.png" alt="페이스북">
+                    <img src="images/instagram.png" alt="인스타그램">
+                    <img src="images/youtube.png" alt="유튜브">
+                    <img src="images/twitter.png" alt="트위터">
+                </div>
+            </div>
+        </div>
+
+    </div>    
+</body>
+<!--스크립트-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="com.js"></script> 
+<!--aos-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ AOS.init();   
+
+</script>
+</html>

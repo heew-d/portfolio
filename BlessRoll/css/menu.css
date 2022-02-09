@@ -1,0 +1,61 @@
+/* 상단 이미지 */
+.page-title{
+    background-image: url(../images/menu-top-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.section-title{text-align: center;}
+
+/*메뉴들*/
+.menu-group{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.menu-group .item{
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+.menu-group .item img{
+    width: 100%;transition: 0.5s;
+}
+.menu-group .txt-box{}
+.menu-group .txt-box .product-name{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.menu-group .txt-box .product-name>span{font-size: 16px;}
+.menu-group .info-box{
+    transition: 0.5s;
+    display: none;
+    background-color: #d7c58a;
+    position: absolute; top: 140px; left: 50%;
+    transform: translate(-50%, 0);
+    width: 230px;
+     padding: 10px 0; box-sizing: border-box;
+}
+.menu-group .info-box .product-info{
+    font-size: 13px;
+    padding: 10px; box-sizing: border-box;
+}
+.menu-group .info-box button{
+    background-color: transparent;
+    border: none; color: white;
+    cursor: pointer;
+}
+.menu-group .item:hover img{
+    transform: scale(1.15);transition: 0.5s;
+}
+/* .menu-group .item:hover .info-box{display: block; transition: 0.5s;} */
+
+@media (max-width:991px){
+    .menu-group{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* 여백 초기화 */
+*{
+    position: relative; 
+    padding: 0; margin: 0; 
+    box-sizing: border-box;
+}
+
+/* a 초기화 */
+a{text-decoration: none; color: #ffffff;}
+
+/* 블릿 기호 */
+li,ol,ul{list-style: none;}
+
+/* 반응형 이미지 */
+img, video{width: 100%;}
+
+/* 버튼 초기화 */
+button{border: none;}

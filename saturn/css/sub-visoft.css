@@ -1,0 +1,59 @@
+
+/* visoft-page */
+#visoft-page .item{
+    background-image: url(../images/visoft-top.jpg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#visoft-page .item .txt-box{color:#ffffff; text-align:center;}
+#visoft-page .item .txt-box .title{font-size:50px; font-weight: 600;}
+#visoft-page .item .txt-box .tit-txt{font-size:18px; margin-top:20px;}
+
+.container p{
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    font-size:21px; color:#ffffff;
+}
+.container .not{
+    color:#4f4f4f;
+    font-size:14px;
+    margin:50px 0;
+}
+.container .line{background-color: rgba(0, 0, 0, 0);}
+
+.input-box{
+    padding:50px 0;
+}
+.input-box p{ font-size:16px;}
+
+.form-group{
+    margin-bottom: 15px;
+    display:grid;
+}
+label{
+    font-weight: normal;
+    font-size: 1em;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    color: #4f4f4f;
+}
+
+input, textarea{
+    border:1px solid rgba(0,0,0,0.2);
+    padding:10px 0;
+}
+
+.btn button{border:none; padding:20px 30px;}
+
+.icon-required{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #f25656;
+    border-radius: 50%;
+    margin-left: 5px;
+    vertical-align: 2px;
+}

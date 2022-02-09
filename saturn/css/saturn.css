@@ -1,0 +1,340 @@
+*{position: relative; padding: 0; margin: 0; box-sizing: border-box;}
+ol,ul,li{list-style: none;}
+img{display: block; width: 100%; height: 100%;}
+a{text-decoration: none;}
+
+#main{width: 100vw; height: calc(100vh - 120px);}
+#main .image-section{
+    width: 100%; height: 100%;
+}
+#main .image-section .item{
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+#main .image-section .item1{
+    background-image: url(../images/slider1-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#main .image-section .item2{
+    background-image: url(../images/slider2-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#main .image-section .item3{
+    background-image: url(../images/slider1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#main .image-section .item4{
+    background-image: url(../images/slider3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#main .image-section .item5{
+    background-image: url(../images/slider5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#main .image-section .item6{
+    background-image: url(../images/slider4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#main .image-section .item7{
+    background-image: url(../images/slider3-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#main .image-section .item{display: none;}
+#main .image-section .item:nth-child(1){display: block;}
+
+/*메인 슬라이드 글씨*/
+.main-txt{
+    position: absolute; top: 50%; left:10%;
+    transform: translate(0, -50%);
+    display: flex; flex-direction: column;
+    color: white;
+}
+.main-txt .main-title{font-size: 24px;}
+.main-txt .main-sub{font-size: 48px;}
+.main-txt .main-btn{
+    background-color: rgba(255,255,255,0);
+    color: rgba(255,255,255,1);
+    border: 1px solid rgba(255,255,255,0.29);
+    margin: 15px 0;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+.main-txt .main-btn:hover{
+    background-color: rgba(255,255,255,0.7);
+    color: rgba(0,0,0,0.8);
+    transition: 0.5s;
+}
+
+/*btn-group*/
+#main .btn-group {}
+ 
+#main .btn{
+    position: absolute; top: calc(100% - 360px);
+    width:30px; height: 30px;
+    transition: 0.5s;
+}
+#main .btn-prev{
+    left: 20px;
+    transform: rotate(-45deg);
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+#main .btn-next{
+    right: 20px;
+    transform: rotate(45deg);
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+}
+@media (max-width:415px){
+    #main .btn-prev,
+    #main .btn-next{display: none;}
+}
+
+/* 메인 슬라이드 화살표 hover*/
+#main .btn-prev:hover{
+    border-top: 2px solid #4f4f4f;
+    border-left: 2px solid #4f4f4f;
+    transition: 0.5s;
+}
+#main .btn-next:hover{
+    border-top: 2px solid #4f4f4f;
+    border-right: 2px solid #4f4f4f;
+    transition: 0.5s;
+}
+
+
+/*indicator*/
+#main .indicator{
+    width: 100%;
+    position: absolute; left: 0; bottom: 20px;
+    text-align: center;
+}
+#main .indicator .indi{
+    display: inline-block;
+    width: 10px; height: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#main .indicator .indi:nth-child(1){
+    background-color: white;
+}
+
+/* 디자이너 소개 섹션 */
+#designer{}
+#designer .container{}
+
+#designer .container .designer-group{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+}
+
+#designer .container .designer-group .item{
+    text-align: center;
+    font-size: 12px;
+    color: #4f4f4f
+}
+#designer .container .designer-group .item .image{
+    margin-bottom: 20px;
+}
+#designer .container .designer-group .item>.line{
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#designer .container .designer-group .item .name{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#designer .image .sub-img{
+    position: absolute; top: 0; left: 0; display: none;
+    transition: 0.5s;
+}
+#designer .image img{
+    border-radius:50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#designer .image:hover .sub-img{display: block; transition: 0.5s;}
+
+@media (max-width:1000px){
+    #designer .container .designer-group{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 80px;
+    }
+}
+
+/* visoft 이미지 섹션 */
+#visoft{}
+#visoft .image-group{margin-top: 30px; cursor: pointer;}
+#visoft .image-group .sub-img{
+    position: absolute; top: 0; left: 0;
+    display: none;
+    transition: 0.5s;
+}
+#visoft .image-group:hover .sub-img{
+    display: block;
+}
+
+/* 홍보영상 */
+#media .image-group{margin-top: 30px;}
+#media .image-group .video{
+    width:1180px; max-width: 1180px;
+    height: 600px;
+    object-fit: cover;
+    /* position: absolute; top: 0; left: 0; */
+    display: none;
+}
+@media (max-width:1180px){
+    #media .image-group .video{width: 100%; height: 51vw;}
+}
+#media .play{
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+#media .play i{
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-40%, -50%);
+    color: white;
+    font-size: 30px;
+}
+
+
+/*제품*/
+#products .produst-group{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+#products .prod{
+    overflow: hidden;
+    transition: 2s;
+    cursor: pointer;
+}
+#products .sub-prod{
+    position: absolute; top: 0; left: 0;
+    display: none;
+    transform: scale(1.2);
+    transition: 2s;
+}
+#products .prod:hover .main-prod{display: none;}
+#products .prod:hover .sub-prod{display: block;}
+
+#products .bottom-img {margin-top: 10px; cursor: pointer;}
+
+@media (max-width:1000px){
+    #products .produst-group{grid-template-columns: repeat(2, 1fr);}
+}
+
+
+/* about 섹션 */
+#about{
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+}
+#about .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+#about .item>.line{background-color: #888;}
+
+#about .item .text{
+     line-height: 25px;
+     margin-top: 10px;
+     letter-spacing: 0.5px
+}
+#about .item>.title{font-size: 16px;}
+#about .item4 .img-group{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 10px;
+}
+/* #about .item2 .arti{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    margin-top: 10px;
+} */
+
+#about .item2 .box{display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;}
+#about .item img{width: 100%; height: 100%; object-fit: cover;}
+#about .item .case{
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    margin-top: 10px; */
+    margin-top: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#about .item .case:hover .text-section{top: 0; transition: 0.5s;}
+/* #about .item .text-section{
+    position: absolute; top: 200%; left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+} */
+#about .item .text-section .title{
+    font-size: 18px; color: white;
+}
+#about .arti{overflow: hidden;}
+#about .arti:hover .text-section{top: 0; transition: 0.5s;}
+#about .text-section{
+    position: absolute; top: 200%; left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+}
+#about .text-section .title{
+    font-size: 12px; color: white;
+}
+.date{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    margin-top: 30px;
+}
+@media (max-width:1000px){
+    #about .container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    #about .item>.title{font-size: 18px;}
+    #about .text-section{font-size: 14px; margin: 10px 0 0 10px; line-height: 30px;}
+    #about .item4 .img-group{grid-template-columns: repeat(2, 1fr);}
+}
+
+

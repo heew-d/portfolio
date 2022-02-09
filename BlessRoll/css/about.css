@@ -30,6 +30,7 @@
     height: 780px; 
     overflow-y: hidden;
 }
+iframe{border: none; margin: 20px;}
 
 @media (max-width:991px){
     .ifram-box{width: 100%;}

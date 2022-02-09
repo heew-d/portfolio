@@ -285,35 +285,38 @@
         </footer>
     </div>
 
-</body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--스크립트-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--owl-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!--aos-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
+    <script>
+        AOS.init();
 
-    $('.slider-1').owlCarousel({
-    loop:true,
-    nav:true,
-    items:1,
-    autoplay:false,
-    autoplayTimeout:5000,
-})
+        $('.slider-1').owlCarousel({
+        loop:true,
+        nav:true,
+        items:1,
+        autoplay:false,
+        autoplayTimeout:5000,
+    })
 
-$(".ham-btn").click(function(){
-    $("body").toggleClass("btn-on")
-   $(".menuWrap").stop().fadeToggle()
-    $(".circle").stop().fadeToggle()
-})
+    $(".ham-btn").click(function(){
+        $("body").toggleClass("btn-on")
+    $(".menuWrap").stop().fadeToggle()
+        $(".circle").stop().fadeToggle()
+    })
 
-$(".menuWrap>ul>li").hover(function(){
-    $(this).find(".subnav").stop().show()
+    $(".menuWrap>ul>li").hover(function(){
+        $(this).find(".subnav").stop().show()
 
-}, function(){
-    $(this).find(".subnav").stop().hide()
+    }, function(){
+        $(this).find(".subnav").stop().hide()
 
-})
-</script>
+    })
+    </script>
+    <!--//스크립트-->
+</body>
+
 </html>

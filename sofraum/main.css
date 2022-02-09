@@ -1,0 +1,251 @@
+.section{clear: both;}
+.section-title{}
+.section-title h1{
+    font-size: 45px;
+    font-weight: 300;
+    color: #131212;
+    letter-spacing: 4px;
+    line-height: 1.2;
+}
+.section-title .line{
+    display: block;
+    width: 60px; height: 1px;
+    background-color: black;
+}
+
+/*이미지 슬라이드 화면 section1*/
+.slider-1{
+    max-height: calc(100vh - 150px);
+    overflow: hidden;
+}
+/*버튼관련 속성*/    
+.section1 .owl-nav{
+    /* border: 1px solid blue; */
+    position: absolute; top: 50%; 
+    width: 100%; height: 120px;
+    transform: translate(0,-60px); /*중앙에 위치하도록*/
+}
+
+.section1 .owl-nav button{
+    /* background-color: gold !important; */
+    width: 60px; height: 120px;
+    position: absolute; top: 0;  
+}
+.section1 .owl-nav button span{display: none;}
+.section1 .owl-nav button.owl-prev{left: 0;}
+.section1 .owl-nav button.owl-next{right: 0;}
+.section1 .owl-nav button::before{
+    content: '';
+    /* border: 1px solid blue; */
+    display: block; width: 60px; height: 30px;
+    position: absolute;
+}
+.section1 .owl-nav button.owl-prev::before{
+    background: url(images/btn1.png) no-repeat;
+    left: 20px; top: 50%; margin-top: -15px;
+}
+.section1 .owl-nav button.owl-next::before{
+    background: url(images/btn2.png) no-repeat;
+    right: 20px; top: 50%; margin-top: -15px;
+}
+
+/*인디케이터 그룹*/
+.section1 .owl-dots{
+    /* border: 1px solid red; */
+    position: absolute; bottom: 0; left: 0;
+    width: 100%; height: 30px;
+    text-align: center;
+}
+
+/*인디케이터 각각*/
+.section1 .owl-dot{
+    margin: 3px;
+    width: 36px; height: 4px;
+    background-color: #b7b7b7 !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+/*활성화된 인디케이트*/
+.section1 .owl-dot.active{
+    background-color: #ffffff !important;
+}
+/*텍스트박스*/
+.section1 .text-box{
+    /* border: 2px solid pink; */
+    position: absolute; top: 20%; left: 78px;
+    width: 60%;
+    color: white;
+    text-align: start;
+}
+.section1 .text-box *{transition: 0.5s;}
+.section1 .text-box h1{opacity: 0; top: 100px;}
+.section1 .text-box p{opacity: 0; top: 100px; margin-top: 20px;}
+.section1 .text-box button{opacity: 0; top: 100px; margin-top: 20px;}
+
+/*보여지는 아이템 : 엑티브아이템*/
+.section1 .owl-item.active .text-box h1{opacity: 1; top: 0; transition: 0.3s; font-size: 45px;}
+.section1 .owl-item.active .text-box p{opacity: 1; top: 0; transition: 0.6s;}
+.section1 .owl-item.active .text-box button{opacity: 1; top: 0; transition: 0.9s;}
+
+
+@media (max-width:500px){
+    .section1 .owl-nav, .section1 .owl-dots{display: none;}
+}
+@media (max-width:768px){
+    .section1 .text-box{width: 40%; left: 20px; top: 15%;}
+    .section1 .owl-item.active .text-box h1{font-size: 19px; }
+    .section1 .text-box p{display: none !important;}
+    .section1 .text-box button{display: none;}
+}
+
+/* new */
+.section2{
+    padding: 100px 0 80px;
+}
+.section2 .item{
+    margin-bottom: 40px;
+}
+.section2 h1{text-align: center;}
+.section2 .line{margin: 30px auto 40px;}
+.section2 .item img{width: 100%;  transition: 0.5s;}
+
+.section2 .text-box{
+    /* margin-top: 30px; */
+    text-align: center;
+}
+.section2 .img-box{
+    border-radius: 20%; overflow: hidden;
+}
+.section2 .item-name{
+    font-size: 22px;
+    color: #181818;
+    text-align: center;
+}
+@media (max-width:376px){
+    .section2{padding-top: 10px;}
+}
+
+/*클라이언트 section3*/
+.section3{
+    /* background-color: #f2f0ef; */
+    background-color: #181818;
+    padding: 90px 0 50px;
+}
+.section3 .item{
+    margin-bottom: 50px;
+    display: flex; justify-content: center;
+    /* border: 1px solid red; */
+}
+
+/* 동영상 section4 */
+.section4{
+    background: url(images/bg-img2.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+.section4 .vod{}
+
+.section4 .vod img{width: 100%; }
+.section4 .section-title{
+    color: #ffffff;
+    margin-top: 13%;
+
+}
+.section4 .section-title h1{
+    color: #ffffff;
+    font-size: 48px;
+}
+.section4 .section-title .line{
+background-color: #ffffff;
+margin: 30px 0;
+}
+/*동영상 플레이버튼*/
+.section4 .btn{
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    display: flex; align-items: center; justify-content: center;
+}
+.section4 .btn span{
+    display: block;
+    border-top: 15px solid transparent;
+    border-left: 20px solid black;
+    border-bottom: 15px solid transparent;
+    left: 5px;
+}
+
+@media (max-width:799px){
+    .section4 .section-title{width: 100%; text-align: center;}
+    .section4 .section-title h1{margin-bottom: 20px;}
+    .section4 .section-title .line{display: none;}
+}
+
+/*제품 section5*/
+.section5{padding: 100px 0 80px;}
+.section5 .section-title{}
+.section5 .section-title h1{
+    text-align: center;
+}
+.section5 .section-title .line{
+    margin: 40px auto;
+}
+.section5 .img-box{border-radius: 20%;
+    overflow: hidden;}
+.section5 .item img{width: 100%;}
+
+.section5 .text-box{
+    margin-bottom: 50px;
+}
+.section5 .item-name{
+    font-size: 22px;
+    color: #181818;
+    text-align: center;
+}
+.section5 .item-price .del{
+    text-decoration-line:line-through;
+}
+
+.section5 .sale{
+    display: block;
+    width: 40px; height: 40px;
+    position: absolute;
+    top: 0; left: 12px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    font-size: 12px;
+    border-radius: 50%;
+
+}
+@media (max-width:850px){
+    .section5 .sale::before{
+        top: 20px;left: 50px;
+        width: 40px; height: 40px;
+        line-height: 40px;
+    }
+}
+@media (max-width:700px){
+    .section5 .sale{top: -3px; left: 20px;}
+}
+
+/* 구독 섹션 section6*/
+.section6{
+    background-color: #f2f0ef;
+    padding: 100px 0 100px;
+}
+.section6 .section-title{}
+.section6 .section-title h1{text-align: center; font-size: 38px; color: #131212;}
+.section6 .section-title .line{
+    margin: 40px auto;
+}
+
+.section6 input, .section6 button{width: 100%;box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);}
+
+@media (max-width:700px){
+    .section6 .section-title h1{font-size: 25px;}
+}

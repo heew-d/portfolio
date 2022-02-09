@@ -1,0 +1,23 @@
+.page-title{
+    background-image: url(images/top-img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.section1{padding-top: 100px; padding-bottom: 100px;}
+.section1 .item{margin-bottom: 30px; overflow: hidden;}
+.section1 .img-box{overflow: hidden; width: 100%; height: 100%;}
+.section1 .item img{width: 100%;transition: 0.5s;}
+.section1 .item-name{
+    font-size: 25px;
+    letter-spacing: 2.3px;
+    color: #181818;
+    font-weight: 100;
+    text-align: center;
+}
+.section1 .item-div{
+    font-size: 13px;
+    text-align: center;
+}
+.section1 .item:hover img{transform: scale(1.2);transition: 0.5s;}

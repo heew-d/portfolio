@@ -1,0 +1,55 @@
+/*shop 페이지의 스타일*/
+.page-title{
+    background-image: url(images/top-img2.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-attachment: fixed;
+}
+
+
+/* 내용 */
+.section1{padding-top: 100px; padding-bottom: 100px;}
+.section1 .item{margin-bottom: 30px;}
+.section1 .item .img-box{}
+.section1 .item .img-box img{width: 100%;}
+.section1 .item .item-name{
+    text-transform: uppercase;
+    font-size: 25px; font-weight: 100;
+    color: #181818;
+    text-align: center;
+    margin-top: 20px; margin-bottom: 5px;
+}
+.section1 .item .item-price{
+    color: #999999;
+    font-size: 18px;
+    text-align: center;
+}
+
+.section1 .sale{
+    display: block;
+    width: 40px; height: 40px;
+    position: absolute;
+    top: -6px; left: 10px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    font-size: 12px;
+    border-radius: 50%;
+
+}
+
+@media (max-width:850px){
+    .section1 .sale::before{
+        top: 20px;left: 50px;
+        width: 40px; height: 40px;
+        line-height: 40px;
+    }
+}
+@media (max-width:700px){
+    .section1 .sale{
+        width: 50px; height: 50px;
+        line-height: 48px;
+        top: -4px; left: 1px;
+    }
+}

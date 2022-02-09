@@ -183,8 +183,8 @@
     <section class="page1-sub2 history">
         <div class="section-title">
             <h4>작가 소개 & 프로젝트</h4>
-            <h1><닉 나이트 사진전-거침없이, 아름답게></h1>
-            <p><닉 나이트 사진전-거침없이, 아름답게> 전시는 다큐멘터리적 접근에서부터 패션계의 보편적 시선에 도전한 화보, 사진과 회화의 경계를 허무는 실험과 이미지에 움직임을 더한 패션필름에 이르기까지 삶의 가치와 아름다움에 대한 통념을 그만의 차별화된 ‘이미지’로 거침없이 탈바꿈해 온 닉 나이트의 작품들을 총망라하여 선보입니다. </p>
+            <h1>&lt;닉 나이트 사진전-거침없이, 아름답게&gt;</h1>
+            <p>&lt;닉 나이트 사진전-거침없이, 아름답게&gt; 전시는 다큐멘터리적 접근에서부터 패션계의 보편적 시선에 도전한 화보, 사진과 회화의 경계를 허무는 실험과 이미지에 움직임을 더한 패션필름에 이르기까지 삶의 가치와 아름다움에 대한 통념을 그만의 차별화된 ‘이미지’로 거침없이 탈바꿈해 온 닉 나이트의 작품들을 총망라하여 선보입니다. </p>
         </div>
 
         <div class="container">
@@ -346,77 +346,82 @@
             </div>
         </footer>
         <!-- //하단 -->  
+
+
+        <!--스크립트-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!--owl 슬라이드-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="comm.js"></script>
+        <script>
+                var history_imgBox, visits_img, history_black, history_row, sc_top, win_height
+            /*상수*/
+            history_imgBox = $(".history .img-box");
+            visits_img = $(".visits .img-box")
+            history_black = $(".history .vertical-line .black");
+            history_row = $(".history .row");
+
+            /*변수*/
+            sc_top = $(window).scrollTop();
+            win_height = $(window).height();
+
+            animation_box()
+            history_line()
+            var Timer_history
+            $(window).scroll(function () {
+                sc_top = $(window).scrollTop();
+                history_line()
+                clearTimeout(Timer_history)
+                Timer_history = setTimeout(animation_box, 200)
+                /*흰메뉴*/
+                if (sc_top > 1000) {
+                    $(".header2").addClass("visible")
+                } else {
+                    $(".header2").removeClass("visible")
+                }
+
+            })
+            $(window).resize(function () {
+                animation_box()
+            })
+
+            function history_line() {
+                history_height = history_row.height() + 100;
+                //console.log("history_row:"+history_row)
+                history_row.each(function (i) {
+                    history_row_top = $(this).offset().top
+                    if (history_row_top < sc_top + win_height) {
+                        console.log(i)
+                        history_black.stop().animate({height: history_height * i + 100}, 1000)
+                    }
+                })
+            }
+
+
+            function animation_box() {/*히스토리-img-box*/
+                history_W = history_imgBox.width();
+                history_H = 1024 * history_W / 780;
+                //console.log(history_H)
+                //console.log("이미지너비:"+history_W)
+                history_imgBox.each(function (i) {
+                    this_top = $(this).offset().top;
+                    //console.log("이미지Y축:"+this_top+",i:"+i);
+                    if (this_top < sc_top + 500) {
+                        $(this).stop().animate({height: history_H}, 1000)
+                    }
+                })
+            }
+
+            //review 슬라이드
+            $(".review .slider").owlCarousel({
+                loop:true,
+                items:1, 
+                nav:true,
+                autoplay:true,
+                autoplayTimeout:5000
+            })
+        </script>
+        <!--//스크립트-->
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!--owl 슬라이드-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="comm.js"></script>
-<script>
-        var history_imgBox, visits_img, history_black, history_row, sc_top, win_height
-    /*상수*/
-    history_imgBox = $(".history .img-box");
-    visits_img = $(".visits .img-box")
-    history_black = $(".history .vertical-line .black");
-    history_row = $(".history .row");
 
-    /*변수*/
-    sc_top = $(window).scrollTop();
-    win_height = $(window).height();
-
-    animation_box()
-    history_line()
-    var Timer_history
-    $(window).scroll(function () {
-        sc_top = $(window).scrollTop();
-        history_line()
-        clearTimeout(Timer_history)
-        Timer_history = setTimeout(animation_box, 200)
-        /*흰메뉴*/
-        if (sc_top > 1000) {
-            $(".header2").addClass("visible")
-        } else {
-            $(".header2").removeClass("visible")
-        }
-
-    })
-    $(window).resize(function () {
-        animation_box()
-    })
-
-    function history_line() {
-        history_height = history_row.height() + 100;
-        //console.log("history_row:"+history_row)
-        history_row.each(function (i) {
-            history_row_top = $(this).offset().top
-            if (history_row_top < sc_top + win_height) {
-                console.log(i)
-                history_black.stop().animate({height: history_height * i + 100}, 1000)
-            }
-        })
-    }
-
-
-    function animation_box() {/*히스토리-img-box*/
-        history_W = history_imgBox.width();
-        history_H = 1024 * history_W / 780;
-        //console.log(history_H)
-        //console.log("이미지너비:"+history_W)
-        history_imgBox.each(function (i) {
-            this_top = $(this).offset().top;
-            //console.log("이미지Y축:"+this_top+",i:"+i);
-            if (this_top < sc_top + 500) {
-                $(this).stop().animate({height: history_H}, 1000)
-            }
-        })
-    }
-
-    //review 슬라이드
-    $(".review .slider").owlCarousel({
-        loop:true,
-        items:1, 
-        nav:true,
-        autoplay:true,
-        autoplayTimeout:5000
-    })
-</script>
 </html>

@@ -284,40 +284,41 @@
             </div>
         </div>
 
-    </div>    
+    </div>   
+    <!--스크립트-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="com.js"></script>
+    <script>
+    $(".item1 img").click(function(e){
+        e.preventDefault()
+        $(".pop1").show()
+    })
+    $(".item2 img").click(function(e){
+        e.preventDefault()
+        $(".pop2").show()
+    })
+    $(".item3 img").click(function(e){
+        e.preventDefault()
+        // $(".popupWrap").css({display:"block"})
+        $(".pop3").show()
+    })
+    $(".item4 img").click(function(e){
+        e.preventDefault()
+        $(".pop4").show()
+    })
+    $(".item5 img").click(function(e){
+        e.preventDefault()
+        $(".pop5").show()
+    })
+    $(".item6 img").click(function(e){
+        e.preventDefault()
+        $(".pop6").show()
+    })
+    $(".popupWrap button").click(function(){
+        // $(".popupWrap").css({display:"none"})
+        $(".popupWrap").hide()
+    })
+    </script> 
 </body>
-<!--스크립트-->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-<script src="com.js"></script>
-<script>
-$(".item1 img").click(function(e){
-    e.preventDefault()
-    $(".pop1").show()
-})
-$(".item2 img").click(function(e){
-    e.preventDefault()
-    $(".pop2").show()
-})
-$(".item3 img").click(function(e){
-    e.preventDefault()
-    // $(".popupWrap").css({display:"block"})
-    $(".pop3").show()
-})
-$(".item4 img").click(function(e){
-    e.preventDefault()
-    $(".pop4").show()
-})
-$(".item5 img").click(function(e){
-    e.preventDefault()
-    $(".pop5").show()
-})
-$(".item6 img").click(function(e){
-    e.preventDefault()
-    $(".pop6").show()
-})
-$(".popupWrap button").click(function(){
-    // $(".popupWrap").css({display:"none"})
-    $(".popupWrap").hide()
-})
-</script>
+
 </html>

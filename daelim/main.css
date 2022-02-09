@@ -561,6 +561,8 @@
 }
 .map .text-box p{display: table;}
 
+.map iframe{width: 100%;}
+
 /*테블릿*/
 @media (max-width:900px){
     .map .text-box{

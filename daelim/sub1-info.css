@@ -1,0 +1,111 @@
+.sub-page-top{
+    width: 100%; height: 400px;
+    background-image: url(img-d/sub-bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-page-top::before{
+    content: '';
+    display: block;
+    position: absolute; 
+    top: 0; left: 0; z-index: 1;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.sub-page-name{z-index: 2;}
+
+/*****************************/
+.page1-sub2{padding-top: 100px;}
+.page1-sub2 .container{display: flex;}
+.page1-sub2 .item{
+    width: calc(25% - 22.5px);
+    margin-right: 30px;
+    border: 1px solid #e4e4e4;
+    padding: 40px 20px 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+.page1-sub2 .item:last-child{margin-right: 0;}
+.page1-sub2 .item .wrap *{
+    text-align: center;
+}
+@media (max-width:1000px){
+    .page1-sub2 .container{flex-wrap: wrap; }
+    .page1-sub2 .item{width: calc(50% - 15px)}
+    .page1-sub2 .item:nth-child(2n){margin-right: 0}
+}
+.page1-sub2 .item .wrap h3{}
+.page1-sub2 .item .wrap p{}
+.page1-sub2 .item .wrap .name{
+    font-size: 22px;
+    color: #4e4e4e;
+    display: block;
+    padding: 0;
+    margin: 10px 0 5px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+@media ( max-width:800px){
+    .page1-sub2 .item .wrap .service{font-size: 14px;}
+}
+/* .page1-sub2 .item .wrap .service{} */
+.page1-sub2 .item .wrap .price{
+    font-weight: 400;
+    color: #383838;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;
+
+}
+.page1-sub2 .item .wrap .price span{}
+.page1-sub2 .item .wrap .price span:nth-child(1){}
+.page1-sub2 .item .wrap .price span:nth-child(2){font-size: 0.5em;}
+.page1-sub2 .item .wrap .term{}
+.page1-sub2 .item .wrap .btn{margin: 50px auto 0; color: #5f5f5f; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);}
+.page1-sub2 .item .wrap .btn:hover{color: white;}
+.page1-sub1 .container{
+
+}
+.page1-sub1 table, th, td{
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+table{
+    text-align: center; 
+    margin: 50px auto 0; width: 80%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+thead th{padding: 10px 0;background-color: #eeeeee;}
+td{padding: 8px;}
+tbody{
+    font-size: 14px;
+    color: #212121;
+}
+table ul.table-ul{
+    font-size: 13px;
+    text-align: start;
+    padding: 20px 0 20px 10px;
+}
+table .table-li::before{
+    content: '';
+    display: block;
+    position: absolute; top: 5px; right: calc(100% + 10px);
+    width: 4px; height: 4px;
+    border-top: 2px solid rgb(19, 124, 19);
+    border-right: 2px solid rgb(19, 124, 19);
+    transform: rotate(45deg);
+}
+table li{font-family: 'Noto Sans KR', sans-serif;}
+table .li-gray{
+    color: #666666;
+    text-indent: 20px;
+}
+table .red{color: #bc0c0c;}
+table td>span{
+    font-size: 13px;
+    color: #666666;
+}

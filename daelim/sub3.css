@@ -1,0 +1,39 @@
+.sub-page-top{
+    width: 100%; height: 400px;
+    background-image: url(img-d/sub-bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-page-top::before{
+    content: '';
+    display: block;
+    position: absolute; 
+    top: 0; left: 0; z-index: 1;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.sub-page-name{z-index: 2;}
+
+
+/*****************************/
+.page1-sub1 .container{}
+.page1-sub1 .container .row{
+    display: flex; align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.page1-sub1 .container .row:first-child{
+    border-top: 2px solid rgba(0, 0, 0, 0.4);
+}
+.page1-sub1 .container .row:last-child{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+.page1-sub1 .container .row p{}
+.page1-sub1 .text-box{margin-left: 50px;}
+.page1-sub1 .tit{font-size: 20px;color: #151515;}
+.page1-sub1 .sub-tit{font-size: 16px;color: #151515;}
+.page1-sub1 .txt{font-size: 12px; color: #595959;}
+.page1-sub1 .go a{font-size: 12px; color: #595959; text-decoration: underline;}

@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--폰트어썸-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!--패비콘 favicon-->
+<link href="por-icon.png" rel="icon">
+    <!--구글폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!--노토세리프-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!--노토산스-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 
+        font-family: 'Noto Serif KR', serif;
+        font-family: 'Noto Sans KR', sans-serif;
+
+        font-family: 'Alegreya Sans', sans-serif;
+        font-family: 'EB Garamond', serif; 
+    -->
+    <!--owl 슬라이드-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <!--스타일시트-->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="main.css">
+    <!--aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <title>갤러리</title>
+
+</head>
+<body>
+    <!--첫화면에서 상단. 투명배경-->
+    <header class="header1">
+        <div class="row row1">
+            <div class="container-full">
+                <div class="item item-left">
+                    <ul>
+                        <li><a href="#"><i class="far fa-clock"></i>관람시간: 10:00 ~ 18:00 <span>매주 월요일, 화요일 휴관</span></a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i>서울특별시 종로구 자하문로4길 21</a></li>
+                        <li><a href="#"><i class="fas fa-mobile-alt"></i>T. 02-720-0667</a></li>
+                        <li><a href="#"><i class="fas fa-fax"></i>F. 02-720-0665</a></li>
+                    </ul>
+                </div>
+                <div class="item item-right">
+                    <ul>
+                        <li><a href="#">Follow us:</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="container-full">
+                <div class="item item-left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img-d/footer_daelim.png" alt="로고 이미지">
+                        </a>
+                    </div>
+                    <ul class="main-menu">
+                        <li class="main-li">
+                            <a href="sub1-info.html">VISIT</a>
+                            <ul class="sub-ul">
+                                <li class="sub-li"><a href="#">관람안내</a></li>
+                                <li class="sub-li"><a href="#">미술관 소개</a></li>
+                                <li class="sub-li"><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <a href="sub2-exhibition.html">EXHIBITION</a>
+                            <ul class="sub-ul">
+                                <li class="sub-li"><a href="#">현재 전시</a></li>
+                                <li class="sub-li"><a href="#">지난 전시</a></li>
+                                <li class="sub-li"><a href="#">기념품샵</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <a href="sub3-program.html">PROGRAM</a>
+                            <ul class="sub-ul">
+                                <li class="sub-li"><a href="#">전시 연계프로그램</a></li>
+                                <li class="sub-li"><a href="#">문화프로그램</a></li>
+                                <li class="sub-li"><a href="#">가이드 프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <a href="sub4-news.html">NEWS</a>
+                            <ul class="sub-ul">
+                                <li class="sub-li"><a href="#">NOTICE</a></li>
+                                <li class="sub-li"><a href="#">EVENT</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item item-right">
+                    <div class="btn btn1">관람안내</div>
+                    <div class="btn3"><i class="fas fa-search"></i></div>
+                    <div class="btn4">
+                        <div class="ham-btn">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </header>
+
+    <!--고정상단. 흰색 배경-->
+    <header class="header2">
+        <div class="container-full">
+            <div class="item item-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img-d/header_daelim.png" alt="로고 이미지">
+                    </a>
+                </div>
+                <ul class="main-menu">
+                    <li class="main-li">
+                        <a href="sub1-info.html">VISIT</a>
+                        <ul class="sub-ul">
+                            <li class="sub-li"><a href="#">관람안내</a></li>
+                            <li class="sub-li"><a href="#">미술관 소개</a></li>
+                            <li class="sub-li"><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-li">
+                        <a href="sub2-exhibition.html">EXHIBITION</a>
+                        <ul class="sub-ul">
+                            <li class="sub-li"><a href="#">현재 전시</a></li>
+                            <li class="sub-li"><a href="#">지난 전시</a></li>
+                            <li class="sub-li"><a href="#">기념품샵</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-li">
+                        <a href="sub3-program.html">PROGRAM</a>
+                        <ul class="sub-ul">
+                            <li class="sub-li"><a href="#">전시 연계프로그램</a></li>
+                            <li class="sub-li"><a href="#">문화프로그램</a></li>
+                            <li class="sub-li"><a href="#">가이드 프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-li">
+                        <a href="sub4-news.html">NEWS</a>
+                        <ul class="sub-ul">
+                            <li class="sub-li"><a href="#">NOTICE</a></li>
+                            <li class="sub-li"><a href="#">EVENT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="item item-right">
+                <div class="btn btn1">관람안내</div>
+                <div class="btn3"><i class="fas fa-search"></i></div>
+                <div class="btn4">
+                    <div class="ham-btn">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </header>
+
+    <!-- 모바일 메뉴 -->
+    <div class="mobile-menu">
+        <ul class="main-menu">
+            <li class="main-li">
+                <a href="sub1-info.html">VISIT</a>
+                <ul class="sub-ul">
+                    <li class="sub-li"><a href="#">관람안내</a></li>
+                    <li class="sub-li"><a href="#">미술관 소개</a></li>
+                    <li class="sub-li"><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li class="main-li">
+                <a href="sub2-exhibition.html">EXHIBITION</a>
+                <ul class="sub-ul">
+                    <li class="sub-li"><a href="#">현재 전시</a></li>
+                    <li class="sub-li"><a href="#">지난 전시</a></li>
+                    <li class="sub-li"><a href="#">기념품샵</a></li>
+                </ul>
+            </li>
+            <li class="main-li">
+                <a href="sub3-program.html">PROGRAM</a>
+                <ul class="sub-ul">
+                    <li class="sub-li"><a href="#">전시 연계프로그램</a></li>
+                    <li class="sub-li"><a href="#">문화프로그램</a></li>
+                    <li class="sub-li"><a href="#">가이드 프로그램</a></li>
+                </ul>
+            </li>
+            <li class="main-li">
+                <a href="sub4-news.html">NEWS</a>
+                <ul class="sub-ul">
+                    <li class="sub-li"><a href="#">NOTICE</a></li>
+                    <li class="sub-li"><a href="#">EVENT</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 메인슬라이더 -->
+    <section class="section main">
+        <div class="slider owl-carousel">
+            <div class="item">
+                <img src="img-d/main-bg.png" alt="메인슬라이더1">
+                <div class="text-box">
+                    <h1>NICK KNIGHT: IMAGE</h1>
+                    <h4>닉 나이트 사진전- 거침없이, 아름답게</h4>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="img-d/main-bg3.png" alt="메인슬라이더2">
+                <div class="text-box">
+                    <h1>NICK KNIGHT: IMAGE</h1>
+                    <h4>닉 나이트 사진전- 거침없이, 아름답게</h4>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img-d/main-bg4.png" alt="메인슬라이더3">
+                <div class="text-box">
+                    <h1>NICK KNIGHT: IMAGE</h1>
+                    <h4>닉 나이트 사진전- 거침없이, 아름답게</h4>
+            </div>
+        </div>
+    </section>
+    <!-- //메인슬라이더 -->
+
+    <!-- 현재 전시 프로그램 -->
+    <section class="section program">
+        <div class="section-title">
+            <h4>현재 진행중인 전시&프로그램</h4>
+            <h1>PROGRAM</h1>
+            <p>현재 대림미술관에서 진행되고 있는 전시& 프로그램을 만나보세요!</p>
+        </div>
+        <div class="container">
+            <div class="slider owl-carousel">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/post11.jpg" alt="포스터">
+                    </div>
+                    <div class="text-box">
+                        <div class="prog-title">닉 나이트 사진전-거침없이, 아름답게</div>
+                        <div class="prog-date"> 2021.10.06 ~ 2022.03.26</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/post9.jpg" alt="포스터">
+                    </div>
+                    <div class="text-box">
+                        <div class="prog-title"> 《SOUNDMUSEUM: 너의 감정과 기억》 전시 온라인 중계 다시보기 OPEN!</div>
+                        <div class="prog-date">2021.12.10 ~ 2022.04.12</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/post22.jpg" alt="포스터">
+                    </div>
+                    <div class="text-box">
+                        <div class="prog-title">트로이카: 소리, 빛, 시간 – 감성을 깨우는 놀라운 상상</div>
+                        <div class="prog-date">2021.10.10 ~ 2022.02.12</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/post33.jpg" alt="포스터">
+                    </div>
+                    <div class="text-box">
+                        <div class="prog-title">라이언 맥긴리 - 청춘, 그 찬란한 기록(Ryan McGinley - Magic Magnifier)</div>
+                        <div class="prog-date">2021.11.07 ~ 2022.02.23</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/post44.jpg" alt="포스터">
+                    </div>
+                    <div class="text-box">
+                        <div class="prog-title">The Selby House: #즐거운_나의_집</div>
+                        <div class="prog-date">2021.04.27 ~ 2022.10.29</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/post55.jpg" alt="포스터">
+                    </div>
+                    <div class="text-box">
+                        <div class="prog-title">Paper, Present: 너를 위한 선물</div>
+                        <div class="prog-date">
+                            2021.12.07 ~ 2022.05.27</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/post66.jpg" alt="포스터">
+                    </div>
+                    <div class="text-box">
+                        <div class="prog-title">하이메 아욘, 숨겨진 일곱 가지 사연(Jaime Hayon: Serious Fun)</div>
+                        <div class="prog-date">2021.04.27 ~ 2022.12.29</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/post77.jpg" alt="포스터">
+                    </div>
+                    <div class="text-box">
+                        <div class="prog-title">TONG’s VINTAGE: 기묘한 통의 만물상</div>
+                        <div class="prog-date">2021.05.20 ~ 2021.07.25</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/post88.jpg" alt="포스터">
+                    </div>
+                    <div class="text-box">
+                        <div class="prog-title">SPARKLING SECRETS : 스와르보스키, 그 빛나는 환상</div>
+                        <div class="prog-date">2021.11.08 ~ 2022.03.17</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/post99.jpg" alt="포스터">
+                    </div>
+                    <div class="text-box">
+                        <div class="prog-title">Less and More</div>
+                        <div class="prog-date">2021.12.17 ~ 2022.03.20</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- //현재 전시 프로그램 -->
+
+    <!-- video -->
+    <section class="section subscribe">
+        <div class="vod-box">
+            <video controls autoplay muted loop  playsinline>
+                <source src="img-d/videoplayback.mp4"
+                        type="video/mp4">  
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div>
+    </section>
+    <!-- //video -->
+
+    <!-- VIEW POINT -->
+    <section class="section current">
+        <div class="section-title">
+            <h4>작품 미리보기</h4>
+            <h1>PREVIEW</h1>
+            <p>진행중인 전시의 작품을 미리 만나보세요.</p>
+        </div>
+        <div class="container">
+            <div class="slider owl-carousel">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/view6.jpg" alt="전시">
+                    </div>
+                    <div class="text-box">
+                        <div class="view-title">Susie Smoking, Susie Bick for Yohji Yamamoto,
+                            1988</div>
+                        <div class="view-btn">
+                            <span class="line"></span>
+                            <span class="txt"> View more</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/view7.jpg" alt="전시">
+                    </div>
+                    <div class="text-box">
+                        <div class="view-title">Devon, 1997</div>
+                        <div class="view-btn">
+                            <span class="line"></span>
+                            <span class="txt"> View more</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/view8.jpg" alt="전시">
+                    </div>
+                    <div class="text-box">
+                        <div class="view-title">Rose I, 2012</div>
+                        <div class="view-btn">
+                            <span class="line"></span>
+                            <span class="txt"> View more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/view1.jpg" alt="전시">
+                    </div>
+                    <div class="text-box">
+                        <div class="view-title">Dougie, 1979－1980</div>
+                        <div class="view-btn">
+                            <span class="line"></span>
+                            <span class="txt"> View more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/view5.jpg" alt="전시">
+                    </div>
+                    <div class="text-box">
+                        <div class="view-title">Red Bustle, Yohji Yamamoto, 1986</div>
+                        <div class="view-btn">
+                            <span class="line"></span>
+                            <span class="txt"> View more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/view2.jpg" alt="전시">
+                    </div>
+                    <div class="text-box">
+                        <div class="view-title">Mad John's Bottom Lip, 1979－1980</div>
+                        <div class="view-btn">
+                            <span class="line"></span>
+                            <span class="txt"> View more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/view3.jpg" alt="전시">
+                    </div>
+                    <div class="text-box">
+                        <div class="view-title">Stephen Jones, 1985</div>
+                        <div class="view-btn">
+                            <span class="line"></span>
+                            <span class="txt"> View more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/view4.jpg" alt="전시">
+                    </div>
+                    <div class="text-box">
+                        <div class="view-title">Lady Amanda Harlech, 2009</div>
+                        <div class="view-btn">
+                            <span class="line"></span>
+                            <span class="txt"> View more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/view9.jpg" alt="전시">
+                    </div>
+                    <div class="text-box">
+                        <div class="view-title">Kate, 2008</div>
+                        <div class="view-btn">
+                            <span class="line"></span>
+                            <span class="txt"> View more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/view10.jpg" alt="전시">
+                    </div>
+                    <div class="text-box">
+                        <div class="view-title">Whaam! Lindsey Wixson wearing
+                            Comme De Garcon, 2012</div>
+                        <div class="view-btn">
+                            <span class="line"></span>
+                            <span class="txt"> View more</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //VIEW POINT -->
+
+    <!-- <div class="scroll">스크롤탑</div> -->
+    <!-- D STORY -->
+    <section class="section paint">
+        <img src="img-d/section-bg.jpg" alt="배경이미지">
+        <div class="text-box">
+            <h6>D STORY</h6>
+            <h5>큐레이터가 전하는 색다른 전시 이야기</h5>
+            <p >전시 준비 에피소드, 작가 인터뷰, 칼럼 등<br>
+                전시 관련 다양한 비하인드 스토리!</p>
+            <div class="btn">
+                <span class="txt">자세히보기</span>
+            </div>
+        </div>
+    </section>
+    <!-- //D STORY -->
+
+
+    <!--visits 문화재단 소개-->
+    <section class="section visits">
+        <div class="section-title">
+            <h4>일상이 예술이되는 공간</h4>
+            <h1>대림문화재단 소개</h1>
+            <p></p>
+        </div>
+        <div class="container">
+            <div class="row row1 text-box">
+                <p>1996년 대림그룹에 의해 설립된 대림문화재단은 한국 최초의 사진 전문 미술관인 한림미술관을 대전에 개관했으며, 2002년 5월 서울로 미술관을 이전해 현재의 대림미술관으로
+                    재개관하였습니다. 대림미술관은 현대 사진과 일상 속 예술로 자리매김한 디자인의 창의적이고 다양한 개념과 형식을 소개하며, 감각적인 전시와 교육, 문화프로그램 등을 통해 많은 관람객들과
+                    소통하고 있습니다. 또한 2012년 대림미술관 10주년이 되던 해에는 한남동에 디프로젝트 스페이스 구슬모아당구장을 개관해, 국내 젊은 작가들의 창작활동을 지원하는 전시 공간을 운영하고
+                    있습니다.</p><p> 2016년 설립 20주년을 맞이한 대림문화재단은 또 한번의 도약을 위해 2015년 12월 한남동 독서당로에 디뮤지엄을 개관해 기존의 대림미술관에서 선보여온 다양한 컨텐츠들을
+                    더 확장된 공간에서 보다 많은 이들에게 문화예술의 수준 높은 감성으로 제시하며 새로운 변화를 만들어 가고 있습니다.</p>
+            </div>
+            <div class="row row2 img-box">
+                <img src="img-d/foundation.jpg" alt="visits이미지">
+            </div>
+        </div>
+    </section>
+    <!-- //visits 문화재단 소개-->
+
+    <!--가이드 프로그램 -->
+    <section class="section prog">
+        <div class="section-title">
+            <h4> 가이드 프로그램</h4>
+            <h1>GUIDE</h1>
+        </div>
+        <div class="container">
+            <div class="item">
+                <div class="img-box">
+                    <img src="img-d/g-prog1.png" alt="프로그램">
+                </div>
+                <div class="text-box">
+                    <div class="prog-date"><i class="fas fa-bookmark"></i>오디오 가이드</div>
+                    <div class="prog-title">대림미술관 앱을 통해 만나는 큐레이터의 전시 이야기</div>
+                    <div class="prog-btn">
+                        <span class="line"></span>
+                        <span class="txt">더 알아보기 </span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-box">
+                    <img src="img-d/g-prog2.jpg" alt="프로그램">
+                </div>
+                <div class="text-box">
+                    <div class="prog-date"><i class="fas fa-bookmark"></i>도슨트 투어</div>
+                    <div class="prog-title">매시 정각, 도슨트와 함께하는 전시 감상</div>
+                    <div class="prog-btn">
+                        <span class="line"></span>
+                        <span class="txt">더 알아보기 </span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-box">
+                    <img src="img-d/g-prog3.jpg" alt="프로그램">
+                </div>
+                <div class="text-box">
+                    <div class="prog-date"><i class="fas fa-bookmark"></i>스페셜 도슨트 투어</div>
+                    <div class="prog-title">단체의 연령대와 눈높이에 맞춰 진행되는 전시설명
+                       <br> - 사전 예약으로만 진행</div>
+                    <div class="prog-btn">
+                        <span class="line"></span>
+                        <span class="txt">더 알아보기 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //가이드 프로그램-->
+
+    <!-- shop -->
+    <section class="section shop">
+        <div class="section-title">
+            <h4>도록/아트상품</h4>
+            <h1>SHOP</h1>
+            <p>상품은 대림미술관 1F Museum Shop에서 구매하실 수 있습니다.</p>
+        </div>
+
+        <div class="container">
+            <div class="slider owl-carousel">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/Mmuseumshop01_nic.jpg" alt="상품이미지">
+                        <div class="hover">
+                            <div class="bg"></div>
+                            <div class="btn">Add to Cart</div>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h5 class="item-name">전시도록<span>Exhibition Catalogue</span></h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="item-price">
+                            19,000 won
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/Mmuseumshop02_nic.jpg" alt="상품이미지">
+                        <div class="hover">
+                            <div class="bg"></div>
+                            <div class="btn">Add to Cart</div>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h5 class="item-name">엽서 <span>Post Card</span></h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="item-price">
+                            2,000 won
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/Mmuseumshop03_nic.jpg" alt="상품이미지">
+                        <div class="hover">
+                            <div class="bg"></div>
+                            <div class="btn">Add to Cart</div>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h5 class="item-name">노트<span>Notebook</span></h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="item-price">
+                            3,000 won
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/Mmuseumshop05_nic.jpg" alt="상품이미지">
+                        <div class="hover">
+                            <div class="bg"></div>
+                            <div class="btn">Add to Cart</div>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h5 class="item-name">북마크<span>Bookmark</span></h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="item-price">
+                            2,000 won
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/Mmuseumshop06_nic.jpg" alt="상품이미지">
+                        <div class="hover">
+                            <div class="bg"></div>
+                            <div class="btn">Add to Cart</div>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h5 class="item-name">에코백<span>Eco Bag</span></h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="item-price">
+                            12,000 won
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/Mmuseumshop07_nic.jpg" alt="상품이미지">
+                        <div class="hover">
+                            <div class="bg"></div>
+                            <div class="btn">Add to Cart</div>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h5 class="item-name">3-way백<span>3-way Bag</span></h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="item-price">
+                            24,000 won
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/Mmuseumshop08_nic.jpg" alt="상품이미지">
+                        <div class="hover">
+                            <div class="bg"></div>
+                            <div class="btn">Add to Cart</div>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h5 class="item-name">폰케이스<span>Phone Case</span></h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="item-price">
+                            12,000 won
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="img-d/Mmuseumshop09_nic.jpg" alt="상품이미지">
+                        <div class="hover">
+                            <div class="bg"></div>
+                            <div class="btn">Add to Cart</div>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h5 class="item-name">후디<span>Hoodie</span></h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="item-price">
+                            59,000 won
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- //shop -->
+
+    <!-- map -->
+    <section class="section map section-last">
+        <!-- <img src="img-d/bg_direct01.png" alt="지도"> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.049206495026!2d126.9711523152392!3d37.577458979795836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ea1a39de89%3A0xf84d2de7a79a6f0!2z64yA66a866-47Iig6rSA!5e0!3m2!1sko!2skr!4v1641974493899!5m2!1sko!2skr"
+             width="100%" height="550" 
+             style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="text-box">
+            <p>MAP</p>
+            <h6>오시는 길</h6>
+        </div>
+        
+    </section>
+    <!-- //map -->
+
+    <!-- 하단 -->
+    <footer>
+        <div class="container">
+            <div class="item item1">
+                <div class="logo">
+                    <img src="img-d/footer_daelim.png" alt="푸터로고">
+                </div>
+            </div>
+            <div class="item item2">
+                <h5>Quick Link</h5>
+                <ul class="menu">
+                    <li><a href="#">전시소개</a></li>
+                    <li><a href="#">작가소개</a></li>
+                    <li><a href="#">전시연계프로그램</a></li>
+                    <li><a href="#">MUSEUM SHOP</a></li>
+                </ul>
+            </div>
+            <div class="item item3">
+                <h5>Contact Us</h5>
+                <ul class="us">
+                    <li><a href="#">서울특별시 종로구 자하문로4길 21</a></li>
+                    <li><a href="#">(지번주소 : 통의동 35-1)</a></li>
+                    <li><a href="#">T. 02-720-0667  F. 02-720-0665</a></li>
+                    <li><a href="#">E. info@daelimmuseum.org</a></li>
+                </ul>
+
+            </div>
+            <div class="item item4">
+                <h5>Open Hours</h5>
+                <ul class="hour">
+                    <li><a href="#">관람시간</a></li>
+                    <li><a href="#">10:00 ~ 18:00</a></li>
+                    <li><a href="#">매주 월요일, 화요일 휴관</a></li>
+                    <li><a href="#">*공휴일 정상 개관</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- //하단 -->
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--owl 슬라이드-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="comm.js"></script>
+
+<script>
+    $(window).scroll(function(){
+        st = $(window).scrollTop()
+        console.log(st)
+        $(".scroll").text(st)
+    })
+
+        var history_imgBox, visits_img, history_black, history_row, sc_top, win_height
+    /*상수*/
+    history_imgBox = $(".history .img-box");
+    visits_img = $(".visits .img-box")
+    history_black = $(".history .vertical-line .black");
+    history_row = $(".history .row");
+
+    /*변수*/
+    sc_top = $(window).scrollTop();
+    win_height = $(window).height();
+
+
+    newsimg()
+    animation_box()
+    history_line()
+    var Timer_history
+    $(window).scroll(function () {
+        sc_top = $(window).scrollTop();
+        history_line()
+        clearTimeout(Timer_history)
+        Timer_history = setTimeout(animation_box, 200)
+        newsimg()
+        /*흰메뉴*/
+        if (sc_top > 1000) {
+            $(".header2").addClass("visible")
+        } else {
+            $(".header2").removeClass("visible")
+        }
+
+    })
+    $(window).resize(function () {
+        animation_box()
+    })
+
+    function newsimg() {
+        visits_img_top = visits_img.offset().top;
+        sc_top = $(window).scrollTop();
+        if (visits_img_top < sc_top + win_height) {
+            visits_img.stop().animate({width: 100 + "%"}, 1000)
+        }
+    }
+
+    function history_line() {
+        history_height = history_row.height() + 100;
+        //console.log("history_row:"+history_row)
+        history_row.each(function (i) {
+            history_row_top = $(this).offset().top
+            if (history_row_top < sc_top + win_height) {
+                console.log(i)
+                history_black.stop().animate({height: history_height * i + 100}, 1000)
+            }
+        })
+    }
+
+
+    function animation_box() {/*히스토리-img-box*/
+        history_W = history_imgBox.width();
+        history_H = 1024 * history_W / 780;
+        //console.log(history_H)
+        //console.log("이미지너비:"+history_W)
+        history_imgBox.each(function (i) {
+            this_top = $(this).offset().top;
+            //console.log("이미지Y축:"+this_top+",i:"+i);
+            if (this_top < sc_top + 500) {
+                $(this).stop().animate({height: history_H}, 1000)
+            }
+        })
+    }
+    /*캐러셀*/
+    $(".main .slider").owlCarousel({
+        loop: true,
+        items: 1,
+        nav: true,
+        autoplay:true,
+        autoplayTimeout:7000
+    })
+
+    $(".program .slider").owlCarousel({
+        // center: true,
+        loop: true,
+        items:3,
+        nav: true,
+        margin:30,
+        responsive:{
+            600:{
+                items:3
+            }
+        }
+    })
+
+
+    $(".shop .slider").owlCarousel({
+        loop: true,
+        nav: true,
+        margin: 30,
+        responsive: {
+            0: {items: 1},
+            500: {items:2},
+            700: {items: 4},
+            1000: {items: 4}
+        }
+    })
+    $(".current .slider").owlCarousel({
+        loop: true,
+        nav: true,
+        margin: 30,
+        responsive: {
+            0: {items: 1},
+            500: {items: 2},
+            700: {items: 3},
+            1000: {items: 4}
+        }
+    })
+</script>
+</html>

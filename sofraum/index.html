@@ -296,20 +296,22 @@
             <span class="bar bar2"></span>
             <span class="bar bar3"></span>
         </div>
+
+        <!--스크립트-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="common.js"></script>
+        <script>
+            $(".slider-1").owlCarousel({
+                loop:true,  //계속 회전되도록
+                items:1, //보여지는 이미지 갯수
+                nav:true, //방향키(이전,다음버튼) 보이도록
+                autoplay:true, //자동회전
+                autoplayTimeout:50000, //자동회전 시간간격
+
+            })
+        </script>
+        <!--//스크립트-->
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="common.js"></script>
-<script>
-    $(".slider-1").owlCarousel({
-        loop:true,  //계속 회전되도록
-        items:1, //보여지는 이미지 갯수
-        nav:true, //방향키(이전,다음버튼) 보이도록
-        autoplay:true, //자동회전
-        autoplayTimeout:50000, //자동회전 시간간격
 
-    })
-
-
-</script>
 </html>

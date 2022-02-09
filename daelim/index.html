@@ -229,6 +229,7 @@
                 <div class="text-box">
                     <h1>NICK KNIGHT: IMAGE</h1>
                     <h4>닉 나이트 사진전- 거침없이, 아름답게</h4>
+                </div>
             </div>
         </div>
     </section>
@@ -782,8 +783,8 @@
     <section class="section map section-last">
         <!-- <img src="img-d/bg_direct01.png" alt="지도"> -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.049206495026!2d126.9711523152392!3d37.577458979795836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ea1a39de89%3A0xf84d2de7a79a6f0!2z64yA66a866-47Iig6rSA!5e0!3m2!1sko!2skr!4v1641974493899!5m2!1sko!2skr"
-             width="100%" height="550" 
-             style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           height="550" 
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <div class="text-box">
             <p>MAP</p>
             <h6>오시는 길</h6>
@@ -832,132 +833,134 @@
     </footer>
     <!-- //하단 -->
 
-
-</body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!--owl 슬라이드-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="comm.js"></script>
-
-<script>
-    $(window).scroll(function(){
-        st = $(window).scrollTop()
-        console.log(st)
-        $(".scroll").text(st)
-    })
-
-        var history_imgBox, visits_img, history_black, history_row, sc_top, win_height
-    /*상수*/
-    history_imgBox = $(".history .img-box");
-    visits_img = $(".visits .img-box")
-    history_black = $(".history .vertical-line .black");
-    history_row = $(".history .row");
-
-    /*변수*/
-    sc_top = $(window).scrollTop();
-    win_height = $(window).height();
-
-
-    newsimg()
-    animation_box()
-    history_line()
-    var Timer_history
-    $(window).scroll(function () {
+    <!--스크립트-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--owl 슬라이드-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="comm.js"></script>
+    
+    <script>
+        $(window).scroll(function(){
+            st = $(window).scrollTop()
+            console.log(st)
+            $(".scroll").text(st)
+        })
+    
+            var history_imgBox, visits_img, history_black, history_row, sc_top, win_height
+        /*상수*/
+        history_imgBox = $(".history .img-box");
+        visits_img = $(".visits .img-box")
+        history_black = $(".history .vertical-line .black");
+        history_row = $(".history .row");
+    
+        /*변수*/
         sc_top = $(window).scrollTop();
-        history_line()
-        clearTimeout(Timer_history)
-        Timer_history = setTimeout(animation_box, 200)
+        win_height = $(window).height();
+    
+    
         newsimg()
-        /*흰메뉴*/
-        if (sc_top > 1000) {
-            $(".header2").addClass("visible")
-        } else {
-            $(".header2").removeClass("visible")
-        }
-
-    })
-    $(window).resize(function () {
         animation_box()
-    })
-
-    function newsimg() {
-        visits_img_top = visits_img.offset().top;
-        sc_top = $(window).scrollTop();
-        if (visits_img_top < sc_top + win_height) {
-            visits_img.stop().animate({width: 100 + "%"}, 1000)
+        history_line()
+        var Timer_history
+        $(window).scroll(function () {
+            sc_top = $(window).scrollTop();
+            history_line()
+            clearTimeout(Timer_history)
+            Timer_history = setTimeout(animation_box, 200)
+            newsimg()
+            /*흰메뉴*/
+            if (sc_top > 1000) {
+                $(".header2").addClass("visible")
+            } else {
+                $(".header2").removeClass("visible")
+            }
+    
+        })
+        $(window).resize(function () {
+            animation_box()
+        })
+    
+        function newsimg() {
+            visits_img_top = visits_img.offset().top;
+            sc_top = $(window).scrollTop();
+            if (visits_img_top < sc_top + win_height) {
+                visits_img.stop().animate({width: 100 + "%"}, 1000)
+            }
         }
-    }
-
-    function history_line() {
-        history_height = history_row.height() + 100;
-        //console.log("history_row:"+history_row)
-        history_row.each(function (i) {
-            history_row_top = $(this).offset().top
-            if (history_row_top < sc_top + win_height) {
-                console.log(i)
-                history_black.stop().animate({height: history_height * i + 100}, 1000)
+    
+        function history_line() {
+            history_height = history_row.height() + 100;
+            //console.log("history_row:"+history_row)
+            history_row.each(function (i) {
+                history_row_top = $(this).offset().top
+                if (history_row_top < sc_top + win_height) {
+                    console.log(i)
+                    history_black.stop().animate({height: history_height * i + 100}, 1000)
+                }
+            })
+        }
+    
+    
+        function animation_box() {/*히스토리-img-box*/
+            history_W = history_imgBox.width();
+            history_H = 1024 * history_W / 780;
+            //console.log(history_H)
+            //console.log("이미지너비:"+history_W)
+            history_imgBox.each(function (i) {
+                this_top = $(this).offset().top;
+                //console.log("이미지Y축:"+this_top+",i:"+i);
+                if (this_top < sc_top + 500) {
+                    $(this).stop().animate({height: history_H}, 1000)
+                }
+            })
+        }
+        /*캐러셀*/
+        $(".main .slider").owlCarousel({
+            loop: true,
+            items: 1,
+            nav: true,
+            autoplay:true,
+            autoplayTimeout:7000
+        })
+    
+        $(".program .slider").owlCarousel({
+            // center: true,
+            loop: true,
+            items:3,
+            nav: true,
+            margin:30,
+            responsive:{
+                600:{
+                    items:3
+                }
             }
         })
-    }
-
-
-    function animation_box() {/*히스토리-img-box*/
-        history_W = history_imgBox.width();
-        history_H = 1024 * history_W / 780;
-        //console.log(history_H)
-        //console.log("이미지너비:"+history_W)
-        history_imgBox.each(function (i) {
-            this_top = $(this).offset().top;
-            //console.log("이미지Y축:"+this_top+",i:"+i);
-            if (this_top < sc_top + 500) {
-                $(this).stop().animate({height: history_H}, 1000)
+    
+    
+        $(".shop .slider").owlCarousel({
+            loop: true,
+            nav: true,
+            margin: 30,
+            responsive: {
+                0: {items: 1},
+                500: {items:2},
+                700: {items: 4},
+                1000: {items: 4}
             }
         })
-    }
-    /*캐러셀*/
-    $(".main .slider").owlCarousel({
-        loop: true,
-        items: 1,
-        nav: true,
-        autoplay:true,
-        autoplayTimeout:7000
-    })
-
-    $(".program .slider").owlCarousel({
-        // center: true,
-        loop: true,
-        items:3,
-        nav: true,
-        margin:30,
-        responsive:{
-            600:{
-                items:3
+        $(".current .slider").owlCarousel({
+            loop: true,
+            nav: true,
+            margin: 30,
+            responsive: {
+                0: {items: 1},
+                500: {items: 2},
+                700: {items: 3},
+                1000: {items: 4}
             }
-        }
-    })
+        })
+    </script>
+    <!--//스크립트-->
+</body>
 
-
-    $(".shop .slider").owlCarousel({
-        loop: true,
-        nav: true,
-        margin: 30,
-        responsive: {
-            0: {items: 1},
-            500: {items:2},
-            700: {items: 4},
-            1000: {items: 4}
-        }
-    })
-    $(".current .slider").owlCarousel({
-        loop: true,
-        nav: true,
-        margin: 30,
-        responsive: {
-            0: {items: 1},
-            500: {items: 2},
-            700: {items: 3},
-            1000: {items: 4}
-        }
-    })
-</script>
 </html>

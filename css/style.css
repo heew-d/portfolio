@@ -382,6 +382,7 @@ section article{padding-top: 100px;}
 }
 .pro_desc a.more{font-size: 18px; line-height: 1.8;}
 .view{right: 1%;}
+.page-link{width: 20%;text-align: end;}
 /* .page-link{border: 1px solid gold;} */
 .page-link li{transition: 0.5s;}
 .page-link li:hover{
